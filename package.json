@@ -1,0 +1,23 @@
+{
+  "name": "my-portifolio-devops",
+  "version": "2.0.0",
+  "description": "Portfólio Profissional de DevOps Engineer de Luan Chaves",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "lint:js": "node -c app.js",
+    "test": "node -c app.js && echo 'All checks passed!'"
+  },
+  "keywords": [
+    "devops",
+    "cloud",
+    "infrastructure",
+    "portfolio",
+    "automation",
+    "zabbix",
+    "grafana",
+    "fortigate"
+  ],
+  "author": "Luan Chaves <luanchaves1011@gmail.com>",
+  "license": "MIT"
+}

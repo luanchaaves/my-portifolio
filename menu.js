@@ -1,15 +1,3 @@
-let btnMenu= document.getElementById('btn-menu')
-let menu = document.getElementById('menu-mobile')
-let overlay = document.getElementById('overlay-menu')
-
-btnMenu.addEventListener('click', ()=>{
-    menu.classList.add('abrir-menu')
-})
-
-menu.addEventListener('click', ()=>{
-    menu.classList.remove('abrir-menu')
-})
-
-overlay.addEventListener('click', ()=>{
-    menu.classList.remove('abrir-menu')
-})
+// Backward compatibility wrapper for legacy script reference
+// The primary application logic is modularly handled in app.js
+console.log('Portfolio initialized.');

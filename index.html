@@ -3,478 +3,1989 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>Luan Chaves | DevOps Engineer | Cloud, Infrastructure & Automation</title>
+    <meta name="title" content="Luan Chaves | DevOps Engineer | Cloud, Infrastructure & Automation" />
+    <meta
+      name="description"
+      content="Luan Chaves - DevOps Engineer especializado em Cloud (Azure, AWS, GCP), Infraestrutura Linux, Automação (Python, Bash, PowerShell), Redes FortiGate e Observabilidade com Zabbix & Grafana."
+    />
+    <meta
+      name="keywords"
+      content="DevOps Engineer, Cloud, Infrastructure, Automation, Observability, Azure, AWS, GCP, Linux, Docker, CI/CD, GitHub Actions, Zabbix, Grafana, FortiGate, FOG Project, Luan Chaves, Portfolio DevOps"
+    />
+    <meta name="author" content="Luan Chaves" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0a0e17" />
+    <link rel="canonical" href="https://lctechh.netlify.app/" />
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lctechh.netlify.app/" />
+    <meta property="og:title" content="Luan Chaves | DevOps Engineer | Cloud, Infrastructure & Automation" />
+    <meta
+      property="og:description"
+      content="Profissional de tecnologia com experiência em infraestrutura, cloud, automação, redes e observabilidade, construindo ambientes mais seguros, automatizados e eficientes."
+    />
+    <meta property="og:image" content="imagens/LOGO-LC.png" />
+    <meta property="og:locale" content="pt_BR" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://lctechh.netlify.app/" />
+    <meta name="twitter:title" content="Luan Chaves | DevOps Engineer" />
+    <meta
+      name="twitter:description"
+      content="DevOps First. Development as a Complement. Cloud • Infrastructure • Automation • Observability."
+    />
+    <meta name="twitter:image" content="imagens/LOGO-LC.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="imagens/LOGO-LC.png" type="image/png" />
+    <link rel="apple-touch-icon" href="imagens/LOGO-LC.png" />
+
+    <!-- Google Fonts Preconnect & Fonts (Poppins, Inter, JetBrains Mono) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&family=Sora:wght@300;400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <!--codigo google fonts-->
-    <link rel="stylesheet" href="style.css" />
+
+    <!-- Icon Libraries -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <link
       rel="stylesheet"
-      type="text/css"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
     />
-    <link rel="icon" href="imagens/LOGO-LC.png" type="image/svg+xml">
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
 
-    <!--icons-->
-
-    <script src="menu.js" defer></script>
-    <title>LCTECH</title>
+    <!-- Scripts -->
+    <script src="app.js" defer></script>
   </head>
   <body>
-    <header>
-      <div class="interface">
-        <div class="logo">
-          <a href="#">
-            <img src="imagens/logo1.png" alt="logo" height="250px" />
-          </a>
-        </div>
-        <!--logo-->
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress-bar" id="scroll-progress" aria-hidden="true"></div>
 
-        <nav class="menu-desktop">
+    <!-- ======================================================================
+         1. NAVBAR / HEADER
+         ====================================================================== -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#inicio" class="brand-logo" aria-label="Luan Chaves - Home">
+          <img src="imagens/LOGO-LC.png" alt="LC Logo" class="logo-img" />
+          <div class="brand-text">
+            <span class="brand-name">Luan Chaves</span>
+            <span class="brand-tag">DevOps Engineer</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav-desktop" aria-label="Navegação Principal">
           <ul>
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#especialidades">Especialidades</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#portifolio">Projetos</a></li>
-            <li><a href="#contato">Fale comigo</a></li>
+            <li><a href="#inicio" class="nav-link active">Início</a></li>
+            <li><a href="#sobre" class="nav-link">Sobre</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projetos" class="nav-link">Projetos</a></li>
+            <li><a href="#arquiteturas" class="nav-link">Arquiteturas</a></li>
+            <li><a href="#experiencia" class="nav-link">Experiência</a></li>
+            <li><a href="#devops-lab" class="nav-link">DevOps Lab</a></li>
+            <li><a href="#contato" class="nav-link">Contato</a></li>
           </ul>
         </nav>
 
-        <div class="btn-contato">
+        <!-- Header Actions -->
+        <div class="header-actions">
           <a
-            href="https://api.whatsapp.com/send/?phone=5511949109180&text&type=phone_number&app_absent=0"
+            href="https://github.com/luanchaaves"
             target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-outline btn-sm header-cta-desktop"
+            aria-label="GitHub de Luan Chaves"
           >
-            <button>Contato</button>
+            <i class="bi bi-github"></i>
+            <span>GitHub</span>
+          </a>
+
+          <button
+            class="btn-mobile-toggle"
+            id="btn-menu"
+            aria-label="Abrir menu de navegação"
+            aria-expanded="false"
+          >
+            <i class="bi bi-list"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <div class="menu-mobile-drawer" id="menu-mobile" aria-hidden="true">
+        <div class="mobile-drawer-header">
+          <div class="brand-text">
+            <span class="brand-name">Luan Chaves</span>
+            <span class="brand-tag">DevOps Engineer</span>
+          </div>
+          <button class="btn-close-drawer" id="btn-fechar" aria-label="Fechar menu">
+            <i class="bi bi-x-lg"></i>
+          </button>
+        </div>
+
+        <nav class="nav-mobile" aria-label="Navegação Mobile">
+          <ul class="nav-mobile-list">
+            <li><a href="#inicio" class="mobile-nav-link active"><i class="bi bi-house"></i> Início</a></li>
+            <li><a href="#sobre" class="mobile-nav-link"><i class="bi bi-person"></i> Sobre Mim</a></li>
+            <li><a href="#skills" class="mobile-nav-link"><i class="bi bi-cpu"></i> Tech Stack</a></li>
+            <li><a href="#projetos" class="mobile-nav-link"><i class="bi bi-kanban"></i> Projetos</a></li>
+            <li><a href="#arquiteturas" class="mobile-nav-link"><i class="bi bi-diagram-3"></i> Arquiteturas</a></li>
+            <li><a href="#experiencia" class="mobile-nav-link"><i class="bi bi-briefcase"></i> Experiência</a></li>
+            <li><a href="#devops-lab" class="mobile-nav-link"><i class="bi bi-terminal"></i> DevOps Lab</a></li>
+            <li><a href="#contato" class="mobile-nav-link"><i class="bi bi-envelope"></i> Contato</a></li>
+          </ul>
+        </nav>
+
+        <div class="mobile-drawer-footer">
+          <a
+            href="https://github.com/luanchaaves"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-outline btn-sm"
+          >
+            <i class="bi bi-github"></i> GitHub Profile
+          </a>
+          <a
+            href="https://www.linkedin.com/in/luanchaves10/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary btn-sm"
+          >
+            <i class="bi bi-linkedin"></i> LinkedIn
           </a>
         </div>
-        <!--btn-contato-->
-
-        <div class="btn-abrir-menu" id="btn-menu">
-          <i class="bi bi-list"></i>
-        </div>
-
-        <div class="menu-mobile" id="menu-mobile">
-          <div class="btn-fechar">
-            <i class="bi bi-x-octagon"></i>
-          </div>
-
-          <nav>
-            <ul>
-              <li><a href="#inicio">Início</a></li>
-              <li><a href="#especialidades">Especialidades</a></li>
-              <li><a href="#sobre">Sobre</a></li>
-              <li><a href="#portifolio">Projetos</a></li>
-              <li><a href="#contato">Contato</a></li>
-            </ul>
-          </nav>
-        </div>
-        <!--menu-mobile-->
-
-        <div class="overlay-menu" id="overlay-menu"></div>
       </div>
-      <!--interface-->
 
-      <main>
-        <section class="topo-do-site" id="inicio">
-          <div class="interface">
-            <div class="flex">
-              <div class="txt-topo-site">
-                <h1>DESENVOLVENDO IDEIAS COM A PROGRAMAÇÃO<span>/></span></h1>
-                <p>
-                  Transformo conhecimento e experiência em soluções reais,
-                  unindo Engenharia de software para criar sistemas, automações
-                  e aplicações eficientes. Sou movido pela curiosidade e pelo
-                  aprendizado constante, explorando novas formas de usar a
-                  tecnologia para gerar impacto e resultados.
-                </p>
+      <!-- Backdrop Overlay -->
+      <div class="overlay-backdrop" id="overlay-menu"></div>
+    </header>
 
-                <div class="btn-contato">
-                  <a
-                    href="https://api.whatsapp.com/send/?phone=5511949109180&text&type=phone_number&app_absent=0"
-                    target="_blank"
-                  >
-                    <button>Entre em contato</button>
-                  </a>
-                </div>
-                <!--btn-contato-->
+    <main id="main-content">
+      <!-- ======================================================================
+           2. HERO SECTION
+           ====================================================================== -->
+      <section class="hero-section" id="inicio">
+        <div class="container">
+          <div class="hero-grid">
+            <div class="hero-content reveal-left">
+              <div class="status-pill">
+                <span class="status-indicator-dot"></span>
+                <span>OPEN TO DEVOPS OPPORTUNITIES</span>
               </div>
-              <!--txt-topo-site-->
 
-              <div class="img-topo-site">
-                <img
-                  src="imagens/principal.png"
-                  alt="imagemluan"
-                  height="630px"
-                />
+              <h1 class="hero-title-role">
+                <span class="highlight-cyan">DEVOPS</span> ENGINEER
+              </h1>
+
+              <div class="hero-tagline">
+                <span>Cloud</span>
+                <span class="separator">•</span>
+                <span>Infrastructure</span>
+                <span class="separator">•</span>
+                <span>Automation</span>
+                <span class="separator">•</span>
+                <span>Observability</span>
               </div>
-              <!--img-topo-site-->
-            </div>
-            <!--flex-->
-          </div>
-          <!--interce-->
-        </section>
-        <!--topo-do-site-->
 
-        <section class="especialidades" id="especialidades">
-          <div class="interface">
-            <h2 class="titulo">MINHAS <span>ESPECIALIDADES</span></h2>
-            <div class="flex">
-              <div class="especialidades-box">
-                <i class="bi bi-file-earmark-code-fill"></i>
-                <h3>Web</h3>
-                <p>
-                  Planejamento, implementação e gerenciamento de soluções
-                  escaláveis e seguras nas plataformas Microsoft Azure, Amazon
-                  Web Services (AWS) e Google Cloud Platform (GCP), aplicando
-                  boas práticas de arquitetura em nuvem para garantir alta
-                  disponibilidade, redundância e desempenho, alinhadas aos
-                  princípios do Well-Architected Framework.
-                </p>
-              </div>
-              <!--especialidades-box1-->
+              <p class="hero-description">
+                Profissional de tecnologia com 5+ anos de experiência em infraestrutura,
+                cloud, automação, redes e observabilidade, construindo ambientes mais seguros,
+                automatizados e eficientes.
+              </p>
 
-              <div class="especialidades-box">
-                <i class="bi bi-gear-wide-connected"></i>
-                <h3>Automações</h3>
-                <p>
-                  Criação de soluções de automação personalizadas com Python,
-                  Node.js, TypeScript e JavaScript, seguindo princípios sólidos
-                  de engenharia de software para garantir confiabilidade,
-                  escalabilidade e manutenção simplificada. Desenvolvimento de
-                  scripts e sistemas que eliminam tarefas repetitivas, otimizam
-                  fluxos de trabalho e aumentam a produtividade operacional.
-                </p>
-              </div>
-              <!--especialidades-box2-->
-
-              <div class="especialidades-box">
-                <i class="bi bi-cloud-haze2"></i>
-                <h3>Cloud</h3>
-                <p>
-                  Desenvolvimento e implantação de soluções em nuvem nas
-                  plataformas Microsoft Azure, Amazon Web Services (AWS) e
-                  Google Cloud Platform (GCP), aplicando princípios sólidos de
-                  arquitetura para garantir ambientes escaláveis, seguros e de
-                  alta disponibilidade. Integração com serviços gerenciados,
-                  automação de provisionamento e conexão entre aplicações.
-                </p>
-              </div>
-              <!--especialidades-box3-->
-              <div class="especialidades-box">
-                <i class="devicon-typescript-plain"></i>
-                <h3>TypeScript</h3>
-              </div>
-              <div class="especialidades-box">
-                <i class="devicon-javascript-plain"></i>
-                <h3>JavaScript</h3>
-              </div>
-              <div class="especialidades-box">
-                <i class="devicon-nodejs-plain"></i>
-                <h3>NodeJs</h3>
-              </div>
-              <div class="especialidades-box">
-                <i class="devicon-python-plain"></i>
-                <h3>Python</h3>
-              </div>
-              <div class="especialidades-box">
-                <i class="devicon-azure-plain"></i>
-                <h3>Azure</h3>
-              </div>
-              <div class="especialidades-box">
-                <i class="devicon-amazonwebservices-plain-wordmark"></i>
-                <h3>Aws</h3>
-              </div>
-              <div class="especialidades-box">
-                <i class="devicon-googlecloud-plain"></i>
-                <h3>GCP</h3>
-              </div>
-              <div class="especialidades-box">
-                <i class="devicon-react-original"></i>
-                <h3>React</h3>
-              </div>
-              <div class="especialidades-box">
-                <i class="devicon-html5-plain"></i>
-                <i class="devicon-css3-plain"></i>
-                <h3>Html e Css</h3>
-              </div>
-            </div>
-            <!--flex-->
-          </div>
-          <!--interface>-->
-        </section>
-        <!--especialidades-->
-
-        <section class="sobre" id="sobre">
-          <div class="interface">
-            <div class="flex">
-              <div class="txt-sobre">
-                <h2>MUITO PRAZER, <span>SOU LUAN CHAVES.</span></h2>
-                <p>
-                  Sou um jovem apaixonado por tecnologia e inovação, com atuação
-                  há 5 anos no mercado de TI. Com experiência em infraestrutura,
-                  automações, práticas DevOps e engenharia de software,
-                  aprofundando constantemente meus conhecimentos em
-                  desenvolvimento web e arquitetura de sistemas, iniciei minha
-                  jornada em desenvolvimento em 2022, aplicando princípios
-                  sólidos de codificação e boas práticas de engenharia para
-                  criar soluções escaláveis, seguras e de alta performance.
-                </p>
-                <p>
-                  Tenho experiência prática em automação de processos,
-                  integração entre sistemas e gerenciamento de infraestrutura em
-                  nuvem nas plataformas Azure, GCP e AWS. Trabalho com
-                  linguagens e tecnologias como Python, JavaScript, TypeScript,
-                  Node.js e React, aplicando princípios sólidos de engenharia de
-                  software para criar soluções escaláveis, seguras e de alta
-                  performance. Sou focado, adaptável e em constante evolução,
-                  buscando diariamente aprender novas tecnologias e aprimorar
-                  minhas habilidades para entregar sempre a melhor performance e
-                  qualidade nos projetos em que atuo. Se pudesse me definir em
-                  três palavras: esforçado, criativo e flexível.
-                </p>
-                <div class="btn-social">
-                  <a
-                    href="https://www.instagram.com/luanchaaves11/"
-                    target="_blank"
-                    ><button><i class="bi bi-instagram"></i></button
-                  ></a>
-                  <a
-                    href="https://www.linkedin.com/in/luanchaves10/"
-                    target="_blank"
-                    ><button><i class="bi bi-linkedin"></i></button
-                  ></a>
-                  <a href="https://github.com/luanchaaves" target="_blank"
-                    ><button><i class="bi bi-github"></i></button
-                  ></a>
-                </div>
-                <!--btn-social-->
-              </div>
-              <!--txt-sobre-->
-            </div>
-            <!--flex-->
-          </div>
-          <!--interface-->
-        </section>
-        <!--sobre-->
-
-        <section class="portifolio" id="portifolio">
-          <div class="interface">
-            <h2 class="titulo">MEUS <span>PROJETOS WEB</span></h2>
-            <div class="flex">
-              <a href="https://tocaebook.netlify.app" target="_blank">
-                <div
-                  class="img-port"
-                  style="background-image: url(imagens/ebook.png)"
-                >
-                  <div class="overlay">
-                    <img src="/imagens/htmlcss.png" />
-                    <p>EBOOCK</p>
-                  </div>
-                </div></a
-              >
-
-              <a href="https://lcimccalcular.netlify.app" target="_blank">
-                <div
-                  class="img-port"
-                  style="background-image: url(imagens/calcularimc.png)"
-                >
-                  <div class="overlay">
-                    <img src="/imagens/htmlcss.png" />
-                    <p>CALCULADORA IMC</p>
-                  </div>
-                </div></a
-              >
-
-              <a href="https://lcclima.netlify.app" target="_blank">
-                <div
-                  class="img-port"
-                  style="background-image: url(imagens/clima.png)"
-                >
-                  <div class="overlay">
-                    <img src="/imagens/htmlcss.png" />
-                    <p>DETECTOR DE CLIMA</p>
-                  </div>
-                </div></a
-              >
-
-              <a href="https://geradorlc.netlify.app" target="_blank">
-                <div
-                  class="img-port"
-                  style="background-image: url(imagens/geradoremail.png)"
-                >
-                  <div class="overlay">
-                    <img src="/imagens/htmlcss.png" />
-                    <p>GERADOR DE E-MAIL</p>
-                  </div>
-                </div></a
-              >
-
-              <a href="https://camilalash.netlify.app" target="_blank">
-                <div
-                  class="img-port"
-                  style="background-image: url(imagens/camilalash.png)"
-                >
-                  <div class="overlay">
-                    <img src="/imagens/htmlcss.png" />
-                    <p>LADDING PAGE</p>
-                  </div>
-                </div></a
-              >
-
-              <a href="https://miniextra.netlify.app" target="_blank">
-                <div
-                  class="img-port"
-                  style="background-image: url(imagens/miniextra.png)"
-                >
-                  <div class="overlay">
-                    <img src="/imagens/htmlcss.png" />
-                    <p>WEBSITE COMERCIAL</p>
-                  </div>
-                </div></a
-              >
-
-              <a href="https://lcoutlet.netlify.app" target="_blank">
-                <div
-                  class="img-port"
-                  style="background-image: url(imagens/lcoutlet.png)"
-                >
-                  <div class="overlay">
-                    <img src="/imagens/htmlcss.png" />
-                    <p>LADDING PAGE</p>
-                  </div>
-                </div></a
-              >
-
-              <a href="https://nilarts.netlify.app" target="_blank">
-                <div
-                  class="img-port"
-                  style="background-image: url(imagens/nilarts.png)"
-                >
-                  <div class="overlay">
-                    <img src="/imagens/htmlcss.png" />
-                    <p>LADDING PAGE</p>
-                  </div>
-                </div></a
-              >
-
-              <a href="https://lcstoree.netlify.app" target="_blank">
-                <div
-                  class="img-port"
-                  style="background-image: url(imagens/lcstore.png)"
-                >
-                  <div class="overlay">
-                    <img src="/imagens/htmlcss.png" />
-                    <p>E-COMMERCE</p>
-                  </div>
-                </div></a
-              >
-            </div>
-            <!--flex-->
-          </div>
-          <!--interface-->
-        </section>
-        <!--portifolio-->
-
-        <section class="formulario" id="contato">
-          <section class="interface">
-            <div class="txt-formulario">
-              <h2>FALE <span>COMIGO</span></h2>
-            </div>
-            <!--txt-formulario-->
-
-            <form method="post" action="envia.php">
-              <input
-                type="text"
-                name="nome"
-                id="nome"
-                placeholder="Seu nome"
-                required
-              />
-              <input
-                type="text"
-                name="email"
-                id="email"
-                placeholder="Seu e-mail"
-                required
-              />
-              <input
-                type="text"
-                name="celular"
-                id="celular"
-                placeholder="Seu celular"
-                required
-              />
-              <textarea></textarea>
-                name="mensagem"
-                id="mensagem"
-                cols="30"
-                rows="10"
-                placeholder="Sua mensagem"
-                required
-              ></textarea>
-
-              <div class="btn-enviar">
-                <input type="submit" value="Enviar" />
-              </div>
-            </form>
-          </section>
-          <!--interface-->
-        </section>
-        <!--formulario-->
-      </main>
-
-      <footer>
-        <div class="interface">
-          <div class="line-footer borda">
-            <div class="flex">
-              <div class="logo-footer">
-                <img src="imagens/logo1.png" alt="logo-footer" height="100px" />
-              </div>
-              <!--logo-footer-->
-              <div class="btn-social">
+              <div class="hero-actions">
+                <a href="#projetos" class="btn btn-primary">
+                  <i class="bi bi-folder-check"></i>
+                  <span>Ver Projetos</span>
+                </a>
                 <a
-                  href="https://www.instagram.com/luanchaaves11/"
+                  href="https://github.com/luanchaaves"
                   target="_blank"
-                  ><button><i class="bi bi-instagram"></i></button
-                ></a>
+                  rel="noopener noreferrer"
+                  class="btn btn-outline"
+                >
+                  <i class="bi bi-github"></i>
+                  <span>GitHub</span>
+                </a>
                 <a
                   href="https://www.linkedin.com/in/luanchaves10/"
                   target="_blank"
-                  ><button><i class="bi bi-linkedin"></i></button
-                ></a>
-                <a href="https://github.com/luanchaaves" target="_blank"
-                  ><button><i class="bi bi-github"></i></button
-                ></a>
+                  rel="noopener noreferrer"
+                  class="btn btn-outline"
+                >
+                  <i class="bi bi-linkedin"></i>
+                  <span>LinkedIn</span>
+                </a>
               </div>
-              <!--btn-social-->
-            </div>
-            <!--flex-->
-          </div>
-          <!--line-footer-->
 
-          <div class="line-footer">
-            <p>
-              <i class="bi bi-envelope-fill"></i
-              ><a href="mailto:luanchaves1011@gmail.com"
-                >luanchaves1011@gmail.com</a
-              >
+              <div class="hero-tech-pills">
+                <span class="hero-tech-label">Core Focus:</span>
+                <span class="tech-mini-badge"><i class="devicon-azure-plain"></i> Azure</span>
+                <span class="tech-mini-badge"><i class="devicon-amazonwebservices-plain-wordmark"></i> AWS</span>
+                <span class="tech-mini-badge"><i class="devicon-googlecloud-plain"></i> GCP</span>
+                <span class="tech-mini-badge"><i class="devicon-linux-plain"></i> Linux</span>
+                <span class="tech-mini-badge"><i class="devicon-docker-plain"></i> Docker</span>
+                <span class="tech-mini-badge"><i class="devicon-githubactions-plain"></i> CI/CD</span>
+                <span class="tech-mini-badge"><i class="devicon-grafana-plain"></i> Observability</span>
+              </div>
+            </div>
+
+            <!-- Hero Visual Terminal Component -->
+            <div class="hero-visual-card reveal-right">
+              <div class="terminal-window">
+                <div class="terminal-header">
+                  <div class="terminal-dots">
+                    <span class="terminal-dot red"></span>
+                    <span class="terminal-dot yellow"></span>
+                    <span class="terminal-dot green"></span>
+                  </div>
+                  <span class="terminal-title">luan@devops-node-01:~</span>
+                  <i class="bi bi-hdd-network text-muted"></i>
+                </div>
+                <div class="terminal-body">
+                  <div class="terminal-line">
+                    <span class="t-prompt">$</span>
+                    <span class="t-cmd">neofetch --devops</span>
+                  </div>
+                  <div class="terminal-line">
+                    <span class="t-key">Role:</span>
+                    <span class="t-val">DevOps Engineer / Infrastructure Specialist</span>
+                  </div>
+                  <div class="terminal-line">
+                    <span class="t-key">Experience:</span>
+                    <span class="t-val">5+ Years in IT Operations & Systems</span>
+                  </div>
+                  <div class="terminal-line">
+                    <span class="t-key">Mindset:</span>
+                    <span class="t-val">DevOps First • Dev as a Complement</span>
+                  </div>
+
+                  <div class="terminal-sys-grid">
+                    <div class="sys-item">
+                      <span class="sys-lbl">Multi-Cloud</span>
+                      <span class="sys-val t-info">Azure • AWS • GCP</span>
+                    </div>
+                    <div class="sys-item">
+                      <span class="sys-lbl">Monitoring</span>
+                      <span class="sys-val t-success">Zabbix • Grafana (24/7)</span>
+                    </div>
+                    <div class="sys-item">
+                      <span class="sys-lbl">Virtualization</span>
+                      <span class="sys-val">Proxmox • VMware • Hyper-V</span>
+                    </div>
+                    <div class="sys-item">
+                      <span class="sys-lbl">Security / Net</span>
+                      <span class="sys-val">FortiGate • VLAN • VPN</span>
+                    </div>
+                  </div>
+
+                  <div class="terminal-line">
+                    <span class="t-prompt">$</span>
+                    <span class="t-cmd">systemctl status infrastructure.service</span>
+                  </div>
+                  <div class="terminal-line">
+                    <span class="t-success">● Active: running (high-availability)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           3. METRICS SECTION
+           ====================================================================== -->
+      <section class="metrics-section" id="metricas" aria-label="Métricas Principais">
+        <div class="container">
+          <div class="metrics-grid">
+            <div class="metric-card reveal">
+              <div class="metric-icon-box">
+                <i class="bi bi-clock-history"></i>
+              </div>
+              <div class="metric-number-wrap">
+                <span class="metric-number" data-target="5" data-suffix="+">5+</span>
+              </div>
+              <h3 class="metric-title">Anos em TI</h3>
+              <p class="metric-desc">Fundação sólida em infraestrutura, redes, virtualização e suporte avançado.</p>
+            </div>
+
+            <div class="metric-card reveal" style="transition-delay: 0.1s">
+              <div class="metric-icon-box">
+                <i class="bi bi-clouds-fill"></i>
+              </div>
+              <div class="metric-number-wrap">
+                <span class="metric-number" data-target="3">3</span>
+              </div>
+              <h3 class="metric-title">Cloud Providers</h3>
+              <p class="metric-desc">Ambientes e serviços implementados em Microsoft Azure, AWS e Google Cloud.</p>
+            </div>
+
+            <div class="metric-card reveal" style="transition-delay: 0.2s">
+              <div class="metric-icon-box">
+                <i class="bi bi-lightning-charge-fill"></i>
+              </div>
+              <div class="metric-number-wrap">
+                <span class="metric-number">~1h → ~5min</span>
+              </div>
+              <h3 class="metric-title">Otimização de Deploy</h3>
+              <p class="metric-desc">Redução no tempo de preparação e imagem de máquinas com FOG Project & PXE.</p>
+            </div>
+
+            <div class="metric-card reveal" style="transition-delay: 0.3s">
+              <div class="metric-icon-box">
+                <i class="bi bi-activity"></i>
+              </div>
+              <div class="metric-number-wrap">
+                <span class="metric-number">24/7</span>
+              </div>
+              <h3 class="metric-title">Infra Monitoring</h3>
+              <p class="metric-desc">Monitoramento contínuo, dashboards e alertas via Zabbix, Grafana e SNMP.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           4. ABOUT ME SECTION
+           ====================================================================== -->
+      <section class="section section-alt" id="sobre">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-badge"><i class="bi bi-person-badge"></i> Perfil Profissional</span>
+            <h2 class="section-title">Sobre <span>Mim</span></h2>
+            <p class="section-subtitle">
+              Trajetória sólida construída sobre infraestrutura, redes e sistemas, evoluindo constantemente para práticas modernas de Cloud e DevOps.
             </p>
           </div>
-          <!--line-footer-->
-          4
+
+          <div class="about-grid">
+            <div class="about-visual reveal-left">
+              <div class="about-photo-wrapper">
+                <img
+                  src="imagens/principal.png"
+                  alt="Luan Chaves - DevOps Engineer"
+                  loading="lazy"
+                  width="480"
+                  height="420"
+                />
+                <div class="about-badge-overlay">
+                  <div class="badge-overlay-icon">
+                    <i class="bi bi-shield-check"></i>
+                  </div>
+                  <div class="badge-overlay-text">
+                    <strong>DevOps & Infrastructure</strong>
+                    <span>5+ Anos no Mercado de Tecnologia</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-text-content reveal-right">
+              <p class="about-lead">
+                Sou um profissional de tecnologia com <strong>5 anos de atuação sólida no mercado de TI</strong>, focado na construção e manutenção de ambientes resilientes, seguros e automatizados.
+              </p>
+              <p>
+                Minha trajetória iniciou-se na base da infraestrutura de TI: administração de servidores Linux e Windows, virtualização (Proxmox, VMware, Hyper-V), redes corporativas e segurança de borda com firewalls FortiGate (VLANs, VPNs e regras de tráfego).
+              </p>
+              <p>
+                Com a evolução contínua da tecnologia, expandi meu domínio para <strong>arquitetura em Nuvem (Azure, AWS, GCP)</strong>, <strong>automação de tarefas (Python, PowerShell, Bash, n8n)</strong> e <strong>observabilidade em tempo real (Zabbix, Grafana, SNMP)</strong>.
+              </p>
+              <p>
+                Paralelamente, detenho competências em <strong>engenharia de software</strong> (TypeScript, JavaScript, Node.js, React), o que me proporciona um entendimento profundo do ciclo de vida das aplicações — facilitando a integração entre desenvolvimento e operações (DevOps).
+              </p>
+
+              <div class="about-core-pillars">
+                <div class="pillar-item">
+                  <i class="bi bi-cloud-check"></i>
+                  <div>
+                    <h4>Cloud & Infraestrutura</h4>
+                    <p>Provisionamento seguro em Azure, AWS, GCP e servidores on-premise.</p>
+                  </div>
+                </div>
+                <div class="pillar-item">
+                  <i class="bi bi-gear"></i>
+                  <div>
+                    <h4>Automação & CI/CD</h4>
+                    <p>Redução de esforço manual com scripts e esteiras GitHub Actions.</p>
+                  </div>
+                </div>
+                <div class="pillar-item">
+                  <i class="bi bi-graph-up"></i>
+                  <div>
+                    <h4>Observabilidade 24/7</h4>
+                    <p>Coleta de métricas, telemetria e dashboards no Grafana e Zabbix.</p>
+                  </div>
+                </div>
+                <div class="pillar-item">
+                  <i class="bi bi-code-slash"></i>
+                  <div>
+                    <h4>Software Complementar</h4>
+                    <p>Conhecimento em desenvolvimento web para melhor comunicação DevOps.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="about-social-row">
+                <a
+                  href="https://www.linkedin.com/in/luanchaves10/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-outline btn-sm"
+                >
+                  <i class="bi bi-linkedin"></i> LinkedIn
+                </a>
+                <a
+                  href="https://github.com/luanchaaves"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-outline btn-sm"
+                >
+                  <i class="bi bi-github"></i> GitHub
+                </a>
+                <a
+                  href="https://www.instagram.com/luanchaaves11/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-outline btn-sm"
+                >
+                  <i class="bi bi-instagram"></i> Instagram
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <!--interface-footer-->
-      </footer>
-    </header>
+      </section>
+
+      <!-- ======================================================================
+           5. TECH STACK SECTION
+           ====================================================================== -->
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-badge"><i class="bi bi-layers-half"></i> Ferramental & Competências</span>
+            <h2 class="section-title">Tech <span>Stack</span></h2>
+            <p class="section-subtitle">
+              Tecnologias e ferramentas organizadas por domínio de atuação, priorizando infraestrutura, nuvem, automação e observabilidade.
+            </p>
+          </div>
+
+          <div class="tech-stack-grid">
+            <!-- 1. Cloud -->
+            <div class="stack-category-card reveal">
+              <div class="category-header">
+                <div class="category-icon"><i class="bi bi-clouds"></i></div>
+                <h3 class="category-title">Cloud Computing</h3>
+              </div>
+              <div class="tech-items-list">
+                <div class="tech-item">
+                  <div class="tech-item-info">
+                    <i class="devicon-azure-plain colored"></i>
+                    <span class="tech-name">Microsoft Azure</span>
+                  </div>
+                  <span class="tech-tag">VMs • IAM • Net</span>
+                </div>
+                <div class="tech-item">
+                  <div class="tech-item-info">
+                    <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
+                    <span class="tech-name">Amazon AWS</span>
+                  </div>
+                  <span class="tech-tag">EC2 • S3 • VPC</span>
+                </div>
+                <div class="tech-item">
+                  <div class="tech-item-info">
+                    <i class="devicon-googlecloud-plain colored"></i>
+                    <span class="tech-name">Google Cloud (GCP)</span>
+                  </div>
+                  <span class="tech-tag">Compute • Cloud Run</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. DevOps & CI/CD -->
+            <div class="stack-category-card reveal" style="transition-delay: 0.1s">
+              <div class="category-header">
+                <div class="category-icon"><i class="bi bi-arrow-repeat"></i></div>
+                <h3 class="category-title">DevOps & CI/CD</h3>
+              </div>
+              <div class="tech-items-list">
+                <div class="tech-item">
+                  <div class="tech-item-info">
+                    <i class="devicon-docker-plain colored"></i>
+                    <span class="tech-name">Docker</span>
+                  </div>
+                  <span class="tech-tag">Containers</span>
+                </div>
+                <div class="tech-item">
+                  <div class="tech-item-info">
+                    <i class="devicon-git-plain colored"></i>
+                    <span class="tech-name">Git</span>
+                  </div>
+                  <span class="tech-tag">Version Control</span>
+                </div>
+                <div class="tech-item">
+                  <div class="tech-item-info">
+                    <i class="devicon-githubactions-plain colored"></i>
+                    <span class="tech-name">GitHub Actions</span>
+                  </div>
+                  <span class="tech-tag">CI/CD Pipelines</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. Infrastructure -->
+            <div class="stack-category-card reveal" style="transition-delay: 0.2s">
+              <div class="category-header">
+                <div class="category-icon"><i class="bi bi-hdd-stack"></i></div>
+                <h3 class="category-title">Infrastructure</h3>
+              </div>
+              <div class="tech-items-list">
+                <div class="tech-item">
+                  <div class="tech-item-info">
+                    <i class="devicon-linux-plain colored"></i>
+                    <span class="tech-name">Linux OS</span>
+                  </div>
+                  <span class="tech-tag">Debian • Ubuntu</span>
+                </div>
+                <div class="tech-item">
+                  <div class="tech-item-info">
+                    <i class="bi bi-server"></i>
+                    <span class="tech-name">Proxmox VE</span>
+                  </div>
+                  <span class="tech-tag">Hypervisor</span>
+                </div>
+                <div class="tech-item">
+                  <div class="tech-item-info">
+                    <i class="bi bi-cpu"></i>
+                    <span class="tech-name">VMware & Hyper-V</span>
+                  </div>
+                  <span class="tech-tag">Virtualization</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4. Observability -->
+            <div class="stack-category-card reveal" style="transition-delay: 0.3s">
+              <div class="category-header">
+                <div class="category-icon"><i class="bi bi-speedometer2"></i></div>
+                <h3 class="category-title">Observability</h3>
+              </div>
+              <div class="tech-items-list">
+                <div class="tech-item">
+                  <div class="tech-item-info">
+                    <i class="bi bi-graph-up-arrow"></i>
+                    <span class="tech-name">Zabbix</span>
+                  </div>
+                  <span class="tech-tag">Agent & Server</span>
+                </div>
+                <div class="tech-item">
+                  <div class="tech-item-info">
+                    <i class="devicon-grafana-plain colored"></i>
+                    <span class="tech-name">Grafana</span>
+                  </div>
+                  <span class="tech-tag">Dashboards</span>
+                </div>
+                <div class="tech-item">
+                  <div class="tech-item-info">
+                    <i class="bi bi-router"></i>
+                    <span class="tech-name">SNMP Protocol</span>
+                  </div>
+                  <span class="tech-tag">Network Telemetry</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 5. Networking & Security -->
+            <div class="stack-category-card reveal">
+              <div class="category-header">
+                <div class="category-icon"><i class="bi bi-shield-lock"></i></div>
+                <h3 class="category-title">Networking & Security</h3>
+              </div>
+              <div class="tech-items-list">
+                <div class="tech-item">
+                  <div class="tech-item-info">
+                    <i class="bi bi-shield-shaded"></i>
+                    <span class="tech-name">FortiGate Firewall</span>
+                  </div>
+                  <span class="tech-tag">Security Gateway</span>
+                </div>
+                <div class="tech-item">
+                  <div class="tech-item-info">
+                    <i class="bi bi-diagram-2"></i>
+                    <span class="tech-name">VLAN & Routing</span>
+                  </div>
+                  <span class="tech-tag">Network Segregation</span>
+                </div>
+                <div class="tech-item">
+                  <div class="tech-item-info">
+                    <i class="bi bi-key"></i>
+                    <span class="tech-name">IPsec & SSL VPN</span>
+                  </div>
+                  <span class="tech-tag">Secure Access</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 6. Automation -->
+            <div class="stack-category-card reveal" style="transition-delay: 0.1s">
+              <div class="category-header">
+                <div class="category-icon"><i class="bi bi-code-square"></i></div>
+                <h3 class="category-title">Automation & Scripts</h3>
+              </div>
+              <div class="tech-items-list">
+                <div class="tech-item">
+                  <div class="tech-item-info">
+                    <i class="devicon-python-plain colored"></i>
+                    <span class="tech-name">Python</span>
+                  </div>
+                  <span class="tech-tag">Automation</span>
+                </div>
+                <div class="tech-item">
+                  <div class="tech-item-info">
+                    <i class="devicon-bash-plain colored"></i>
+                    <span class="tech-name">Bash & PowerShell</span>
+                  </div>
+                  <span class="tech-tag">Shell Scripting</span>
+                </div>
+                <div class="tech-item">
+                  <div class="tech-item-info">
+                    <i class="bi bi-node-plus"></i>
+                    <span class="tech-name">n8n & Power Automate</span>
+                  </div>
+                  <span class="tech-tag">Workflow Automation</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 7. Development -->
+            <div class="stack-category-card reveal" style="transition-delay: 0.2s">
+              <div class="category-header">
+                <div class="category-icon"><i class="bi bi-terminal-split"></i></div>
+                <h3 class="category-title">Development (Complement)</h3>
+              </div>
+              <div class="tech-items-list">
+                <div class="tech-item">
+                  <div class="tech-item-info">
+                    <i class="devicon-typescript-plain colored"></i>
+                    <span class="tech-name">TypeScript / JS</span>
+                  </div>
+                  <span class="tech-tag">Frontend & Backend</span>
+                </div>
+                <div class="tech-item">
+                  <div class="tech-item-info">
+                    <i class="devicon-nodejs-plain colored"></i>
+                    <span class="tech-name">Node.js</span>
+                  </div>
+                  <span class="tech-tag">Backend Runtime</span>
+                </div>
+                <div class="tech-item">
+                  <div class="tech-item-info">
+                    <i class="devicon-react-original colored"></i>
+                    <span class="tech-name">React</span>
+                  </div>
+                  <span class="tech-tag">Modern UI</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 8. IT Management -->
+            <div class="stack-category-card reveal" style="transition-delay: 0.3s">
+              <div class="category-header">
+                <div class="category-icon"><i class="bi bi-clipboard-check"></i></div>
+                <h3 class="category-title">IT Management & Ops</h3>
+              </div>
+              <div class="tech-items-list">
+                <div class="tech-item">
+                  <div class="tech-item-info">
+                    <i class="devicon-jira-plain colored"></i>
+                    <span class="tech-name">Jira & GLPI</span>
+                  </div>
+                  <span class="tech-tag">ITSM & Service Desk</span>
+                </div>
+                <div class="tech-item">
+                  <div class="tech-item-info">
+                    <i class="bi bi-microsoft"></i>
+                    <span class="tech-name">Microsoft Intune</span>
+                  </div>
+                  <span class="tech-tag">Endpoint Management</span>
+                </div>
+                <div class="tech-item">
+                  <div class="tech-item-info">
+                    <i class="bi bi-building-lock"></i>
+                    <span class="tech-name">Microsoft 365 Admin</span>
+                  </div>
+                  <span class="tech-tag">Cloud Identity & Admin</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           6. DEVOPS & ENGINEERING PROJECTS (CASES)
+           ====================================================================== -->
+      <section class="section section-alt" id="projetos">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-badge"><i class="bi bi-terminal-check"></i> Cases Técnicos</span>
+            <h2 class="section-title">Projetos de <span>Engenharia & DevOps</span></h2>
+            <p class="section-subtitle">
+              Soluções reais de infraestrutura, automação, observabilidade e redes implementadas com foco em confiabilidade, métricas e alto impacto operacional.
+            </p>
+          </div>
+
+          <div class="cases-container">
+            <!-- CASE 1: Zabbix & Grafana -->
+            <article class="case-card reveal">
+              <div class="case-card-header">
+                <div class="case-title-area">
+                  <span class="case-category-badge"><i class="bi bi-activity"></i> Observability & Monitoring</span>
+                  <h3 class="case-title">Infrastructure Monitoring with Zabbix & Grafana</h3>
+                </div>
+                <div class="case-highlight-metric">
+                  <span class="highlight-val">24/7</span>
+                  <span class="highlight-lbl">Visibilidade & Telemetria em Tempo Real</span>
+                </div>
+              </div>
+
+              <div class="case-card-body">
+                <div class="case-details-grid">
+                  <div class="case-block">
+                    <span class="case-block-label"><i class="bi bi-exclamation-circle"></i> Problema</span>
+                    <p class="case-block-text">
+                      Ausência de visibilidade unificada da saúde dos servidores, ativos de rede e links de comunicação, resultando em detecção tardia de falhas e tempo elevado para resolução de incidentes (MTTR).
+                    </p>
+                  </div>
+
+                  <div class="case-block">
+                    <span class="case-block-label"><i class="bi bi-bullseye"></i> Objetivo</span>
+                    <p class="case-block-text">
+                      Centralizar a coleta de métricas de hardware, sistema operacional e tráfego de rede com emissão de alertas proativos antes do impacto aos usuários.
+                    </p>
+                  </div>
+
+                  <div class="case-block">
+                    <span class="case-block-label"><i class="bi bi-check2-circle"></i> Solução & Arquitetura</span>
+                    <p class="case-block-text">
+                      Deploy de servidor Zabbix em ambiente Linux com Zabbix Agents nos hosts críticos e consultas SNMP v2/v3 nos switches, access points e firewall FortiGate. Integração com Grafana para criação de dashboards visuais executivos e operacionais.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="case-sidebar">
+                  <div class="case-tech-group">
+                    <h4>Tecnologias Utilizadas</h4>
+                    <div class="case-tech-tags">
+                      <span class="case-tag"><i class="bi bi-server"></i> Zabbix</span>
+                      <span class="case-tag"><i class="devicon-grafana-plain"></i> Grafana</span>
+                      <span class="case-tag"><i class="bi bi-router"></i> SNMP</span>
+                      <span class="case-tag"><i class="devicon-linux-plain"></i> Linux</span>
+                      <span class="case-tag"><i class="bi bi-shield-shaded"></i> FortiGate</span>
+                    </div>
+                  </div>
+
+                  <div class="case-result-box">
+                    <div class="result-header">
+                      <i class="bi bi-trophy"></i>
+                      <span>Resultado Mensurável</span>
+                    </div>
+                    <p class="result-text">
+                      Monitoramento contínuo de 100% dos ativos críticos com dashboards em tempo real e gatilhos de alerta, prevenindo indisponibilidades de infraestrutura.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- CASE 2: FOG Project -->
+            <article class="case-card reveal">
+              <div class="case-card-header">
+                <div class="case-title-area">
+                  <span class="case-category-badge"><i class="bi bi-lightning-charge"></i> Automation & Deployment</span>
+                  <h3 class="case-title">Automated OS Deployment with FOG Project</h3>
+                </div>
+                <div class="case-highlight-metric">
+                  <span class="highlight-val">~1h → ~5min</span>
+                  <span class="highlight-lbl">Redução no Tempo de Preparação</span>
+                </div>
+              </div>
+
+              <div class="case-card-body">
+                <div class="case-details-grid">
+                  <div class="case-block">
+                    <span class="case-block-label"><i class="bi bi-exclamation-circle"></i> Problema</span>
+                    <p class="case-block-text">
+                      Processo de formatação, instalação de sistema operacional e configuração de softwares em novas máquinas executado manualmente via mídia física, consumindo em média 1 hora por equipamento.
+                    </p>
+                  </div>
+
+                  <div class="case-block">
+                    <span class="case-block-label"><i class="bi bi-bullseye"></i> Objetivo</span>
+                    <p class="case-block-text">
+                      Automatizar a distribuição e restauração de imagens padronizadas pela rede corporativa, escalando o provisionamento e reduzindo o tempo operacional.
+                    </p>
+                  </div>
+
+                  <div class="case-block">
+                    <span class="case-block-label"><i class="bi bi-check2-circle"></i> Solução & Arquitetura</span>
+                    <p class="case-block-text">
+                      Implementação de servidor FOG Project em ambiente Linux virtualizado (Hyper-V / Windows Server), com suporte a boot PXE na rede local. Captura de imagens golden master customizadas com drivers e softwares pré-instalados para deploy multicast e unicast.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="case-sidebar">
+                  <div class="case-tech-group">
+                    <h4>Tecnologias Utilizadas</h4>
+                    <div class="case-tech-tags">
+                      <span class="case-tag"><i class="bi bi-disc"></i> FOG Project</span>
+                      <span class="case-tag"><i class="bi bi-windows"></i> Windows Server</span>
+                      <span class="case-tag"><i class="bi bi-cpu"></i> Hyper-V</span>
+                      <span class="case-tag"><i class="bi bi-hdd-network"></i> PXE Boot</span>
+                      <span class="case-tag"><i class="bi bi-diagram-3"></i> Networking</span>
+                      <span class="case-tag"><i class="bi bi-gear-wide"></i> Automation</span>
+                    </div>
+                  </div>
+
+                  <div class="case-result-box">
+                    <div class="result-header">
+                      <i class="bi bi-trophy"></i>
+                      <span>Resultado Mensurável</span>
+                    </div>
+                    <p class="result-text">
+                      Tempo de provisionamento reduzido de <strong>~1 hora para aproximadamente ~5 minutos</strong> por máquina, garantindo 100% de conformidade de imagem.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- CASE 3: FortiGate & Network Security -->
+            <article class="case-card reveal">
+              <div class="case-card-header">
+                <div class="case-title-area">
+                  <span class="case-category-badge"><i class="bi bi-shield-lock"></i> Network & Security</span>
+                  <h3 class="case-title">Network & Security Infrastructure with FortiGate</h3>
+                </div>
+                <div class="case-highlight-metric">
+                  <span class="highlight-val">Zero-Trust</span>
+                  <span class="highlight-lbl">Segmentação de Redes & VPN Segura</span>
+                </div>
+              </div>
+
+              <div class="case-card-body">
+                <div class="case-details-grid">
+                  <div class="case-block">
+                    <span class="case-block-label"><i class="bi bi-exclamation-circle"></i> Problema</span>
+                    <p class="case-block-text">
+                      Ambiente de rede plano sem segmentação lógica entre servidores, estações de trabalho e visitantes, além da necessidade de acesso remoto seguro e criptografado para colaboradores.
+                    </p>
+                  </div>
+
+                  <div class="case-block">
+                    <span class="case-block-label"><i class="bi bi-bullseye"></i> Objetivo</span>
+                    <p class="case-block-text">
+                      Estruturar uma topologia segura com segregação de tráfego por VLANs, túneis VPN corporativos e inspeção de políticas de firewall centralizadas no FortiGate.
+                    </p>
+                  </div>
+
+                  <div class="case-block">
+                    <span class="case-block-label"><i class="bi bi-check2-circle"></i> Solução & Arquitetura</span>
+                    <p class="case-block-text">
+                      Criação de VLANs dedicadas (Gerência, Servidores, Usuários, Visitantes), configuração de rotas estáticas, regras de firewall granulares, VPNs SSL com autenticação e integração SNMP para auditoria de tráfego.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="case-sidebar">
+                  <div class="case-tech-group">
+                    <h4>Tecnologias Utilizadas</h4>
+                    <div class="case-tech-tags">
+                      <span class="case-tag"><i class="bi bi-shield-shaded"></i> FortiGate</span>
+                      <span class="case-tag"><i class="bi bi-diagram-2"></i> VLAN Segregation</span>
+                      <span class="case-tag"><i class="bi bi-key"></i> SSL / IPsec VPN</span>
+                      <span class="case-tag"><i class="bi bi-fire"></i> Firewall Policies</span>
+                      <span class="case-tag"><i class="bi bi-router"></i> SNMP Telemetry</span>
+                    </div>
+                  </div>
+
+                  <div class="case-result-box">
+                    <div class="result-header">
+                      <i class="bi bi-trophy"></i>
+                      <span>Resultado Mensurável</span>
+                    </div>
+                    <p class="result-text">
+                      Isolamento total entre zonas de rede críticas e acesso remoto estável e criptografado com conformidade de segurança.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- CASE 4: Cloud Infrastructure & DevOps Lab -->
+            <article class="case-card reveal">
+              <div class="case-card-header">
+                <div class="case-title-area">
+                  <span class="case-category-badge"><i class="bi bi-clouds"></i> DevOps Lab / Personal Project</span>
+                  <h3 class="case-title">Cloud Infrastructure & High-Availability Lab</h3>
+                </div>
+                <div class="case-highlight-metric">
+                  <span class="highlight-val">Multi-Cloud</span>
+                  <span class="highlight-lbl">Laboratório Prático (Azure • AWS • GCP)</span>
+                </div>
+              </div>
+
+              <div class="case-card-body">
+                <div class="case-details-grid">
+                  <div class="case-block">
+                    <span class="case-block-label"><i class="bi bi-exclamation-circle"></i> Cenário / Estudo</span>
+                    <p class="case-block-text">
+                      Ambiente prático de laboratório (DevOps Lab) focado em simular infraestruturas corporativas escaláveis, testando redundância, políticas de IAM e conectividade híbrida.
+                    </p>
+                  </div>
+
+                  <div class="case-block">
+                    <span class="case-block-label"><i class="bi bi-bullseye"></i> Objetivo</span>
+                    <p class="case-block-text">
+                      Projetar e validar redes virtuais (VPC / VNet), instâncias de computação Linux, controle de acesso baseado em funções (RBAC) e monitoramento de consumo de nuvem.
+                    </p>
+                  </div>
+
+                  <div class="case-block">
+                    <span class="case-block-label"><i class="bi bi-check2-circle"></i> Arquitetura do Lab</span>
+                    <p class="case-block-text">
+                      Provisionamento de Virtual Machines em Azure e AWS, configuração de Security Groups, regras de entrada/saída restritas, integração de logs e telemetria de recursos.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="case-sidebar">
+                  <div class="case-tech-group">
+                    <h4>Tecnologias do Lab</h4>
+                    <div class="case-tech-tags">
+                      <span class="case-tag"><i class="devicon-azure-plain"></i> Azure</span>
+                      <span class="case-tag"><i class="devicon-amazonwebservices-plain-wordmark"></i> AWS</span>
+                      <span class="case-tag"><i class="devicon-googlecloud-plain"></i> GCP</span>
+                      <span class="case-tag"><i class="bi bi-lock"></i> IAM & Security</span>
+                      <span class="case-tag"><i class="devicon-linux-plain"></i> Linux VM</span>
+                    </div>
+                  </div>
+
+                  <div class="case-result-box">
+                    <div class="result-header">
+                      <i class="bi bi-flask"></i>
+                      <span>Status do Lab</span>
+                    </div>
+                    <p class="result-text">
+                      Laboratório ativo para testes contínuos de automação, provisionamento e práticas de arquitetura Well-Architected.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- CASE 5: CI/CD Pipeline -->
+            <article class="case-card reveal">
+              <div class="case-card-header">
+                <div class="case-title-area">
+                  <span class="case-category-badge"><i class="bi bi-arrow-repeat"></i> CI/CD & Delivery</span>
+                  <h3 class="case-title">Automated CI/CD Pipeline Workflow</h3>
+                </div>
+                <div class="case-highlight-metric">
+                  <span class="highlight-val">GitOps</span>
+                  <span class="highlight-lbl">Automação de Build & Validação</span>
+                </div>
+              </div>
+
+              <div class="case-card-body">
+                <div class="case-details-grid">
+                  <div class="case-block">
+                    <span class="case-block-label"><i class="bi bi-exclamation-circle"></i> Conceito</span>
+                    <p class="case-block-text">
+                      Estruturação de esteira contínua para validação estática de código (linting), checagem de integridade estrutural e entrega contínua sem risco de erros manuais em produção.
+                    </p>
+                  </div>
+
+                  <div class="case-block">
+                    <span class="case-block-label"><i class="bi bi-bullseye"></i> Fluxo da Esteira</span>
+                    <p class="case-block-text">
+                      A cada commit ou Pull Request na branch principal, o GitHub Actions executa jobs sequenciais de validação, testes estáticos e publicação automatizada.
+                    </p>
+                  </div>
+
+                  <div class="case-block">
+                    <span class="case-block-label"><i class="bi bi-check2-circle"></i> Implementação</span>
+                    <p class="case-block-text">
+                      Workflow em YAML integrado ao repositório, com execução de linters e publicação imediata para o ambiente de borda (CDN Netlify).
+                    </p>
+                  </div>
+                </div>
+
+                <div class="case-sidebar">
+                  <div class="case-tech-group">
+                    <h4>Tecnologias Utilizadas</h4>
+                    <div class="case-tech-tags">
+                      <span class="case-tag"><i class="bi bi-github"></i> GitHub</span>
+                      <span class="case-tag"><i class="devicon-githubactions-plain"></i> Actions</span>
+                      <span class="case-tag"><i class="devicon-docker-plain"></i> Docker</span>
+                      <span class="case-tag"><i class="bi bi-cloud-arrow-up"></i> Netlify CDN</span>
+                    </div>
+                  </div>
+
+                  <div class="case-result-box">
+                    <div class="result-header">
+                      <i class="bi bi-trophy"></i>
+                      <span>Benefício Operacional</span>
+                    </div>
+                    <p class="result-text">
+                      Eliminação de deploys manuais com feedback instantâneo de integridade a cada alteração de código.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           7. INFRASTRUCTURE ARCHITECTURE DIAGRAMS
+           ====================================================================== -->
+      <section class="section" id="arquiteturas">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-badge"><i class="bi bi-diagram-3"></i> Topologias & Fluxos</span>
+            <h2 class="section-title">Infrastructure <span>Architecture</span></h2>
+            <p class="section-subtitle">
+              Visualização estruturada dos fluxos de infraestrutura, redes, observabilidade e esteiras de entrega contínua.
+            </p>
+          </div>
+
+          <div class="arch-container reveal">
+            <div class="arch-nav-tabs" role="tablist">
+              <button
+                class="arch-tab-btn active"
+                data-target="panel-network"
+                role="tab"
+                aria-selected="true"
+              >
+                <i class="bi bi-shield-shaded"></i> 1. Network & Observability Flow
+              </button>
+              <button
+                class="arch-tab-btn"
+                data-target="panel-cicd"
+                role="tab"
+                aria-selected="false"
+              >
+                <i class="bi bi-arrow-repeat"></i> 2. Modern CI/CD Delivery Pipeline
+              </button>
+            </div>
+
+            <!-- Panel 1: Network & Observability Flow -->
+            <div class="arch-diagram-panel active" id="panel-network" role="tabpanel">
+              <div class="diagram-flow-wrapper">
+                <div class="flow-title-bar">
+                  <h3>Topologia de Rede, Borda & Telemetria Zabbix/Grafana</h3>
+                  <span class="tech-tag">SNMP • Agents • Dashboards</span>
+                </div>
+
+                <div class="flow-nodes-container">
+                  <div class="flow-node">
+                    <div class="flow-node-icon"><i class="bi bi-shield-lock-fill"></i></div>
+                    <h4>FortiGate</h4>
+                    <span>Firewall / Gateway</span>
+                  </div>
+
+                  <div class="flow-connector"><i class="bi bi-arrow-right"></i></div>
+
+                  <div class="flow-node">
+                    <div class="flow-node-icon"><i class="bi bi-hdd-network"></i></div>
+                    <h4>Core Network</h4>
+                    <span>VLANs / Switches / APs</span>
+                  </div>
+
+                  <div class="flow-connector"><i class="bi bi-arrow-right"></i></div>
+
+                  <div class="flow-node">
+                    <div class="flow-node-icon"><i class="bi bi-cpu-fill"></i></div>
+                    <h4>Host Servers</h4>
+                    <span>Linux / Windows / VMs</span>
+                  </div>
+
+                  <div class="flow-connector"><i class="bi bi-arrow-right"></i></div>
+
+                  <div class="flow-node">
+                    <div class="flow-node-icon"><i class="bi bi-activity"></i></div>
+                    <h4>Zabbix Server</h4>
+                    <span>SNMP & Agent Metrics</span>
+                  </div>
+
+                  <div class="flow-connector"><i class="bi bi-arrow-right"></i></div>
+
+                  <div class="flow-node">
+                    <div class="flow-node-icon"><i class="devicon-grafana-plain"></i></div>
+                    <h4>Grafana UI</h4>
+                    <span>Dashboards & Alerts</span>
+                  </div>
+                </div>
+
+                <div class="flow-legend">
+                  <span><i class="bi bi-info-circle text-info"></i> <strong>Fluxo:</strong> O firewall FortiGate e switches direcionam métricas via SNMP e Zabbix Agent para o servidor central, que alimenta os painéis analíticos do Grafana.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Panel 2: CI/CD Pipeline Flow -->
+            <div class="arch-diagram-panel" id="panel-cicd" role="tabpanel" hidden>
+              <div class="diagram-flow-wrapper">
+                <div class="flow-title-bar">
+                  <h3>Esteira Automatizada de Integração e Deploy Contínuo (CI/CD)</h3>
+                  <span class="tech-tag">GitHub Actions • Docker • Netlify</span>
+                </div>
+
+                <div class="flow-nodes-container">
+                  <div class="flow-node">
+                    <div class="flow-node-icon"><i class="bi bi-person-gear"></i></div>
+                    <h4>Developer</h4>
+                    <span>Git Commit & Push</span>
+                  </div>
+
+                  <div class="flow-connector"><i class="bi bi-arrow-right"></i></div>
+
+                  <div class="flow-node">
+                    <div class="flow-node-icon"><i class="bi bi-git"></i></div>
+                    <h4>Pull Request</h4>
+                    <span>Branch Main / Review</span>
+                  </div>
+
+                  <div class="flow-connector"><i class="bi bi-arrow-right"></i></div>
+
+                  <div class="flow-node">
+                    <div class="flow-node-icon"><i class="devicon-githubactions-plain"></i></div>
+                    <h4>GitHub Actions</h4>
+                    <span>Lint • Tests • Validation</span>
+                  </div>
+
+                  <div class="flow-connector"><i class="bi bi-arrow-right"></i></div>
+
+                  <div class="flow-node">
+                    <div class="flow-node-icon"><i class="devicon-docker-plain"></i></div>
+                    <h4>Build / Artifact</h4>
+                    <span>Container / Static Build</span>
+                  </div>
+
+                  <div class="flow-connector"><i class="bi bi-arrow-right"></i></div>
+
+                  <div class="flow-node">
+                    <div class="flow-node-icon"><i class="bi bi-globe"></i></div>
+                    <h4>Production Deploy</h4>
+                    <span>Netlify CDN / Edge</span>
+                  </div>
+                </div>
+
+                <div class="flow-legend">
+                  <span><i class="bi bi-info-circle text-info"></i> <strong>Fluxo:</strong> Alterações de código passam por testes estáticos automatizados antes de gerar a versão publicada em alta disponibilidade.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           8. DEVOPS LAB SECTION
+           ====================================================================== -->
+      <section class="section section-alt" id="devops-lab">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-badge"><i class="bi bi-terminal"></i> Laboratório & Pesquisa</span>
+            <h2 class="section-title">DevOps <span>Lab</span></h2>
+            <p class="section-subtitle">
+              Estudos práticos, experimentos de laboratório e projetos contínuos de aprimoramento técnico em tecnologias essenciais.
+            </p>
+          </div>
+
+          <div class="devops-lab-grid">
+            <!-- Lab 1: Docker -->
+            <div class="lab-card reveal">
+              <div class="lab-card-top">
+                <span class="lab-tech-badge"><i class="devicon-docker-plain colored"></i> Docker</span>
+                <span class="status-badge completed">Completed</span>
+              </div>
+              <h3 class="lab-title">Containerização & Docker Compose</h3>
+              <p class="lab-objective">Criação de Dockerfiles otimizados multi-stage, isolamento de microsserviços e persistência com volumes.</p>
+              <div class="lab-meta-row">
+                <span>Domain: Containers</span>
+                <span>Type: Hands-on Lab</span>
+              </div>
+            </div>
+
+            <!-- Lab 2: Terraform -->
+            <div class="lab-card reveal" style="transition-delay: 0.1s">
+              <div class="lab-card-top">
+                <span class="lab-tech-badge"><i class="devicon-terraform-plain colored"></i> Terraform</span>
+                <span class="status-badge in-progress">In Progress</span>
+              </div>
+              <h3 class="lab-title">Infrastructure as Code (IaC)</h3>
+              <p class="lab-objective">Estudo de provisionamento declarativo de recursos em nuvem (Azure / AWS) através de módulos Terraform.</p>
+              <div class="lab-meta-row">
+                <span>Domain: Cloud / IaC</span>
+                <span>Type: Hands-on Lab</span>
+              </div>
+            </div>
+
+            <!-- Lab 3: Kubernetes -->
+            <div class="lab-card reveal" style="transition-delay: 0.2s">
+              <div class="lab-card-top">
+                <span class="lab-tech-badge"><i class="devicon-kubernetes-plain colored"></i> Kubernetes</span>
+                <span class="status-badge learning">Learning</span>
+              </div>
+              <h3 class="lab-title">Cluster Orchestration & Pods</h3>
+              <p class="lab-objective">Aprofundamento em pods, deployments, services, ingress controllers e arquitetura de clusters k8s.</p>
+              <div class="lab-meta-row">
+                <span>Domain: Orchestration</span>
+                <span>Type: Ongoing Study</span>
+              </div>
+            </div>
+
+            <!-- Lab 4: Azure & AWS -->
+            <div class="lab-card reveal">
+              <div class="lab-card-top">
+                <span class="lab-tech-badge"><i class="devicon-azure-plain colored"></i> Azure & AWS</span>
+                <span class="status-badge completed">Completed</span>
+              </div>
+              <h3 class="lab-title">Virtual Networks & VMs</h3>
+              <p class="lab-objective">Configuração de redes virtuais (VNet/VPC), subnets, regras de firewall de nuvem e máquinas virtuais.</p>
+              <div class="lab-meta-row">
+                <span>Domain: Multi-Cloud</span>
+                <span>Type: Hands-on Lab</span>
+              </div>
+            </div>
+
+            <!-- Lab 5: Linux Hardening -->
+            <div class="lab-card reveal" style="transition-delay: 0.1s">
+              <div class="lab-card-top">
+                <span class="lab-tech-badge"><i class="devicon-linux-plain colored"></i> Linux</span>
+                <span class="status-badge completed">Completed</span>
+              </div>
+              <h3 class="lab-title">SysAdmin & Server Hardening</h3>
+              <p class="lab-objective">Configuração de SSH com chaves, firewall UFW/iptables, fail2ban e permissões restritas em Debian e Ubuntu.</p>
+              <div class="lab-meta-row">
+                <span>Domain: OS & Security</span>
+                <span>Type: Hands-on Lab</span>
+              </div>
+            </div>
+
+            <!-- Lab 6: GitHub Actions -->
+            <div class="lab-card reveal" style="transition-delay: 0.2s">
+              <div class="lab-card-top">
+                <span class="lab-tech-badge"><i class="devicon-githubactions-plain colored"></i> Actions</span>
+                <span class="status-badge completed">Completed</span>
+              </div>
+              <h3 class="lab-title">CI/CD Pipeline Automation</h3>
+              <p class="lab-objective">Construção de esteiras automatizadas de validação de código, linting e deploy contínuo integrado ao Git.</p>
+              <div class="lab-meta-row">
+                <span>Domain: CI/CD</span>
+                <span>Type: Hands-on Lab</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           9. PROFESSIONAL EXPERIENCE SECTION
+           ====================================================================== -->
+      <section class="section" id="experiencia">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-badge"><i class="bi bi-briefcase"></i> Carreira & Resultados</span>
+            <h2 class="section-title">Experiência <span>Profissional</span></h2>
+            <p class="section-subtitle">
+              Trajetória de mais de 5 anos em TI, transformando responsabilidades operacionais em melhorias de performance, estabilidade e automação.
+            </p>
+          </div>
+
+          <div class="timeline-wrapper">
+            <!-- Experience Item 1 -->
+            <div class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="timeline-meta">
+                  <h3 class="timeline-role">Especialista em Infraestrutura & Operações de TI</h3>
+                  <span class="timeline-period">5+ Anos de Atuação</span>
+                </div>
+                <div class="timeline-company">
+                  <span>Atuação no Mercado Corporativo de TI & Infraestrutura</span>
+                </div>
+
+                <ul class="timeline-bullets">
+                  <li>
+                    <i class="bi bi-check2-square"></i>
+                    <span><strong>Implementação de Observabilidade:</strong> Estruturação e organização de monitoramento centralizado de infraestrutura utilizando Zabbix e Grafana com alertas proativos.</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-check2-square"></i>
+                    <span><strong>Automação de Provisionamento:</strong> Implantação de servidor FOG Project com PXE boot, reduzindo o tempo de preparação de máquinas de <strong>~1 hora para ~5 minutos</strong>.</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-check2-square"></i>
+                    <span><strong>Segurança de Redes & Borda:</strong> Gerenciamento de firewalls FortiGate, configuração de VLANs, VPNs corporativas (SSL/IPsec) e políticas de acesso.</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-check2-square"></i>
+                    <span><strong>Virtualização & Servidores:</strong> Administração e manutenção de servidores físicos e virtuais em ambientes Proxmox, VMware ESXi e Hyper-V.</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-check2-square"></i>
+                    <span><strong>Automação de Rotinas:</strong> Desenvolvimento de scripts em Python, Bash e PowerShell para automação de tarefas administrativas repetitivas.</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-check2-square"></i>
+                    <span><strong>Gestão Centralizada:</strong> Suporte avançado e administração de inventário e endpoints com Microsoft Intune, Microsoft 365, GLPI e Jira.</span>
+                  </li>
+                </ul>
+
+                <div class="timeline-skills-row">
+                  <span class="tech-mini-badge"><i class="devicon-azure-plain"></i> Azure</span>
+                  <span class="tech-mini-badge"><i class="devicon-linux-plain"></i> Linux</span>
+                  <span class="tech-mini-badge"><i class="bi bi-shield-shaded"></i> FortiGate</span>
+                  <span class="tech-mini-badge"><i class="devicon-grafana-plain"></i> Grafana</span>
+                  <span class="tech-mini-badge"><i class="bi bi-server"></i> Zabbix</span>
+                  <span class="tech-mini-badge"><i class="devicon-python-plain"></i> Python</span>
+                  <span class="tech-mini-badge"><i class="devicon-docker-plain"></i> Docker</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Experience Item 2 -->
+            <div class="timeline-item reveal" style="transition-delay: 0.15s">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="timeline-meta">
+                  <h3 class="timeline-role">Engenharia de Software & Desenvolvimento Web (Complementar)</h3>
+                  <span class="timeline-period">Desde 2022</span>
+                </div>
+                <div class="timeline-company">
+                  <span>Projetos Web, Automações & Integrações</span>
+                </div>
+
+                <ul class="timeline-bullets">
+                  <li>
+                    <i class="bi bi-check2-square"></i>
+                    <span><strong>Aplicações Web & Sistemas:</strong> Desenvolvimento de interfaces modernas e responsivas utilizando TypeScript, JavaScript, React e Node.js.</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-check2-square"></i>
+                    <span><strong>Integração de APIs & Automações:</strong> Construção de rotinas para comunicação entre serviços web, fluxos automatizados em n8n e manipulação de dados.</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-check2-square"></i>
+                    <span><strong>Alinhamento DevOps:</strong> Aplicação de boas práticas de versionamento Git, linting e estruturação de código voltada para esteiras de CI/CD.</span>
+                  </li>
+                </ul>
+
+                <div class="timeline-skills-row">
+                  <span class="tech-mini-badge"><i class="devicon-typescript-plain"></i> TypeScript</span>
+                  <span class="tech-mini-badge"><i class="devicon-nodejs-plain"></i> Node.js</span>
+                  <span class="tech-mini-badge"><i class="devicon-react-original"></i> React</span>
+                  <span class="tech-mini-badge"><i class="devicon-git-plain"></i> Git</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           10. OPEN SOURCE & GITHUB SECTION
+           ====================================================================== -->
+      <section class="section section-alt" id="github">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-badge"><i class="bi bi-github"></i> Comunidade & Código</span>
+            <h2 class="section-title">Open Source & <span>GitHub</span></h2>
+            <p class="section-subtitle">
+              Acompanhe meus repositórios públicos, scripts de automação, pipelines e projetos de código aberto.
+            </p>
+          </div>
+
+          <div class="github-wrapper">
+            <div class="github-profile-card reveal-left" id="github-stats-container">
+              <img src="imagens/luan.jpg" alt="Luan Chaves" class="github-avatar" loading="lazy" />
+              <div class="github-user-meta">
+                <h4>Luan Chaves</h4>
+                <p class="gh-handle"><i class="bi bi-github"></i> @luanchaaves</p>
+                <span class="github-bio">DevOps Engineer • Cloud • Infrastructure • Automation</span>
+              </div>
+              <div class="github-counts">
+                <div class="count-box">
+                  <span class="num">15+</span>
+                  <span class="lbl">Repositórios</span>
+                </div>
+                <div class="count-box">
+                  <span class="num">Public</span>
+                  <span class="lbl">Open Source</span>
+                </div>
+              </div>
+              <a
+                href="https://github.com/luanchaaves"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary btn-sm"
+              >
+                <i class="bi bi-box-arrow-up-right"></i> Ver Perfil Completo
+              </a>
+            </div>
+
+            <div class="github-repo-cards reveal-right">
+              <div class="repo-card">
+                <div class="repo-header">
+                  <span class="repo-name"><i class="bi bi-journal-code"></i> my-portifolio</span>
+                  <span class="tech-tag">Public</span>
+                </div>
+                <p class="repo-desc">Código fonte deste portfólio profissional de DevOps Engineer com pipeline CI/CD via GitHub Actions.</p>
+                <div class="repo-meta">
+                  <span><i class="bi bi-circle-fill text-info"></i> HTML5/CSS3/JS</span>
+                  <span><i class="bi bi-gear"></i> GitHub Actions CI/CD</span>
+                </div>
+              </div>
+
+              <div class="repo-card">
+                <div class="repo-header">
+                  <span class="repo-name"><i class="bi bi-code-slash"></i> devops-automation-scripts</span>
+                  <span class="tech-tag">Public</span>
+                </div>
+                <p class="repo-desc">Scripts e rotinas em Python, Bash e PowerShell para automações de infraestrutura e monitoramento.</p>
+                <div class="repo-meta">
+                  <span><i class="bi bi-circle-fill text-info"></i> Python / Shell</span>
+                  <span><i class="bi bi-terminal"></i> Automation</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section: This Portfolio is Built with DevOps -->
+          <div class="built-with-devops-card reveal" id="devops-portfolio-case">
+            <div class="built-devops-grid">
+              <div class="built-devops-info">
+                <span class="section-badge"><i class="bi bi-arrow-repeat"></i> Meta Case</span>
+                <h3>This Portfolio is Built with DevOps</h3>
+                <p>
+                  Este portfólio não é apenas um site estático: ele é entregue através de uma esteira automatizada de <strong>CI/CD com GitHub Actions</strong>. Cada atualização no código dispara validações estruturais e deploy imediato na borda (Netlify CDN).
+                </p>
+                <div class="pipeline-flow-mini">
+                  <span class="pipe-step"><i class="bi bi-github"></i> GitHub</span>
+                  <span class="pipe-arrow">→</span>
+                  <span class="pipe-step"><i class="bi bi-git"></i> Pull Request</span>
+                  <span class="pipe-arrow">→</span>
+                  <span class="pipe-step"><i class="devicon-githubactions-plain"></i> Actions</span>
+                  <span class="pipe-arrow">→</span>
+                  <span class="pipe-step"><i class="bi bi-check2-circle"></i> Lint / Test</span>
+                  <span class="pipe-arrow">→</span>
+                  <span class="pipe-step active-step"><i class="bi bi-globe"></i> Netlify Edge</span>
+                </div>
+              </div>
+              <div class="built-devops-action" style="text-align: center;">
+                <a
+                  href="https://github.com/luanchaaves/my-portifolio/blob/main/.github/workflows/ci-cd.yml"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-outline"
+                >
+                  <i class="bi bi-file-earmark-code"></i> Inspecionar Workflow (.github/workflows/ci-cd.yml)
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           11. DEVELOPMENT PROJECTS (COMPLEMENTARY)
+           ====================================================================== -->
+      <section class="section" id="development-projects">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-badge"><i class="bi bi-code-square"></i> Competência Complementar</span>
+            <h2 class="section-title">Development <span>Projects</span></h2>
+            <p class="section-subtitle">
+              Projetos de desenvolvimento de software e web desenvolvidos para soluções comerciais, utilitários e landing pages.
+            </p>
+          </div>
+
+          <div class="web-projects-grid">
+            <!-- Project 1 -->
+            <div class="web-project-card reveal">
+              <div class="web-project-img" style="background-image: url('imagens/ebook.png')">
+                <div class="web-project-overlay">
+                  <a href="https://tocaebook.netlify.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                    <i class="bi bi-box-arrow-up-right"></i> Acessar Site
+                  </a>
+                </div>
+              </div>
+              <div class="web-project-body">
+                <div>
+                  <h3 class="web-project-title">Toca Ebook</h3>
+                  <p style="font-size: 0.85rem; margin-top: 4px;">Plataforma de exibição e venda de e-books digitais com interface moderna.</p>
+                </div>
+                <div class="web-project-tags">
+                  <span class="web-tag">HTML5</span>
+                  <span class="web-tag">CSS3</span>
+                  <span class="web-tag">JavaScript</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="web-project-card reveal" style="transition-delay: 0.1s">
+              <div class="web-project-img" style="background-image: url('imagens/calcularimc.png')">
+                <div class="web-project-overlay">
+                  <a href="https://lcimccalcular.netlify.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                    <i class="bi bi-box-arrow-up-right"></i> Acessar Site
+                  </a>
+                </div>
+              </div>
+              <div class="web-project-body">
+                <div>
+                  <h3 class="web-project-title">Calculadora de IMC</h3>
+                  <p style="font-size: 0.85rem; margin-top: 4px;">Ferramenta de cálculo de índice de massa corporal com feedback instantâneo.</p>
+                </div>
+                <div class="web-project-tags">
+                  <span class="web-tag">JavaScript</span>
+                  <span class="web-tag">CSS3</span>
+                  <span class="web-tag">HTML5</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="web-project-card reveal" style="transition-delay: 0.2s">
+              <div class="web-project-img" style="background-image: url('imagens/clima.png')">
+                <div class="web-project-overlay">
+                  <a href="https://lcclima.netlify.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                    <i class="bi bi-box-arrow-up-right"></i> Acessar Site
+                  </a>
+                </div>
+              </div>
+              <div class="web-project-body">
+                <div>
+                  <h3 class="web-project-title">Detector de Clima</h3>
+                  <p style="font-size: 0.85rem; margin-top: 4px;">Aplicação de previsão do tempo com consumo de API externa de clima em tempo real.</p>
+                </div>
+                <div class="web-project-tags">
+                  <span class="web-tag">REST API</span>
+                  <span class="web-tag">JavaScript</span>
+                  <span class="web-tag">Async/Await</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="web-project-card reveal">
+              <div class="web-project-img" style="background-image: url('imagens/geradoremail.png')">
+                <div class="web-project-overlay">
+                  <a href="https://geradorlc.netlify.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                    <i class="bi bi-box-arrow-up-right"></i> Acessar Site
+                  </a>
+                </div>
+              </div>
+              <div class="web-project-body">
+                <div>
+                  <h3 class="web-project-title">Gerador de E-mail</h3>
+                  <p style="font-size: 0.85rem; margin-top: 4px;">Utilitário para formatação rápida de mensagens de e-mail corporativas.</p>
+                </div>
+                <div class="web-project-tags">
+                  <span class="web-tag">JavaScript</span>
+                  <span class="web-tag">CSS3</span>
+                  <span class="web-tag">HTML5</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="web-project-card reveal" style="transition-delay: 0.1s">
+              <div class="web-project-img" style="background-image: url('imagens/camilalash.png')">
+                <div class="web-project-overlay">
+                  <a href="https://camilalash.netlify.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                    <i class="bi bi-box-arrow-up-right"></i> Acessar Site
+                  </a>
+                </div>
+              </div>
+              <div class="web-project-body">
+                <div>
+                  <h3 class="web-project-title">Camila Lash</h3>
+                  <p style="font-size: 0.85rem; margin-top: 4px;">Landing page comercial de alta conversão para serviços de estética e beleza.</p>
+                </div>
+                <div class="web-project-tags">
+                  <span class="web-tag">Landing Page</span>
+                  <span class="web-tag">UI/UX</span>
+                  <span class="web-tag">Responsive</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="web-project-card reveal" style="transition-delay: 0.2s">
+              <div class="web-project-img" style="background-image: url('imagens/miniextra.png')">
+                <div class="web-project-overlay">
+                  <a href="https://miniextra.netlify.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                    <i class="bi bi-box-arrow-up-right"></i> Acessar Site
+                  </a>
+                </div>
+              </div>
+              <div class="web-project-body">
+                <div>
+                  <h3 class="web-project-title">Mini Extra</h3>
+                  <p style="font-size: 0.85rem; margin-top: 4px;">Website comercial voltado para apresentação de produtos e ofertas.</p>
+                </div>
+                <div class="web-project-tags">
+                  <span class="web-tag">Website</span>
+                  <span class="web-tag">CSS3</span>
+                  <span class="web-tag">Responsive</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 7 -->
+            <div class="web-project-card reveal">
+              <div class="web-project-img" style="background-image: url('imagens/lcoutlet.png')">
+                <div class="web-project-overlay">
+                  <a href="https://lcoutlet.netlify.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                    <i class="bi bi-box-arrow-up-right"></i> Acessar Site
+                  </a>
+                </div>
+              </div>
+              <div class="web-project-body">
+                <div>
+                  <h3 class="web-project-title">LC Outlet</h3>
+                  <p style="font-size: 0.85rem; margin-top: 4px;">Landing page moderna para catálogo de produtos e vendas.</p>
+                </div>
+                <div class="web-project-tags">
+                  <span class="web-tag">E-Commerce UI</span>
+                  <span class="web-tag">CSS3</span>
+                  <span class="web-tag">HTML5</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 8 -->
+            <div class="web-project-card reveal" style="transition-delay: 0.1s">
+              <div class="web-project-img" style="background-image: url('imagens/nilarts.png')">
+                <div class="web-project-overlay">
+                  <a href="https://nilarts.netlify.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                    <i class="bi bi-box-arrow-up-right"></i> Acessar Site
+                  </a>
+                </div>
+              </div>
+              <div class="web-project-body">
+                <div>
+                  <h3 class="web-project-title">Nil Arts</h3>
+                  <p style="font-size: 0.85rem; margin-top: 4px;">Portfólio e apresentação visual de serviços artísticos e gráficos.</p>
+                </div>
+                <div class="web-project-tags">
+                  <span class="web-tag">Landing Page</span>
+                  <span class="web-tag">Design</span>
+                  <span class="web-tag">Responsive</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 9 -->
+            <div class="web-project-card reveal" style="transition-delay: 0.2s">
+              <div class="web-project-img" style="background-image: url('imagens/lcstore.png')">
+                <div class="web-project-overlay">
+                  <a href="https://lcstoree.netlify.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                    <i class="bi bi-box-arrow-up-right"></i> Acessar Site
+                  </a>
+                </div>
+              </div>
+              <div class="web-project-body">
+                <div>
+                  <h3 class="web-project-title">LC Store</h3>
+                  <p style="font-size: 0.85rem; margin-top: 4px;">Interface completa de loja virtual com catálogo de produtos e navegação fluida.</p>
+                </div>
+                <div class="web-project-tags">
+                  <span class="web-tag">E-Commerce</span>
+                  <span class="web-tag">JavaScript</span>
+                  <span class="web-tag">HTML5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           12. RESUME / CURRÍCULO SECTION
+           ====================================================================== -->
+      <section class="section section-alt" id="curriculo">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-badge"><i class="bi bi-file-earmark-person"></i> Documentação</span>
+            <h2 class="section-title">Currículo <span>Profissional</span></h2>
+            <p class="section-subtitle">
+              Faça o download do meu currículo completo ou acesse minhas redes profissionais atualizadas.
+            </p>
+          </div>
+
+          <div style="max-width: 680px; margin: 0 auto;" class="reveal">
+            <div class="contact-info-card" style="text-align: center; align-items: center;">
+              <div class="metric-icon-box" style="margin: 0 auto 16px auto;">
+                <i class="bi bi-file-earmark-pdf"></i>
+              </div>
+              <h3 style="font-size: 1.4rem;">Luan Chaves — DevOps Engineer</h3>
+              <p style="font-size: 0.95rem; max-width: 500px;">
+                Resumo de qualificações, histórico profissional detalhado em infraestrutura e redes, certificações e competências técnicas.
+              </p>
+
+              <div style="display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; margin-top: 10px;">
+                <a
+                  href="https://www.linkedin.com/in/luanchaves10/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary"
+                >
+                  <i class="bi bi-linkedin"></i> Visualizar LinkedIn
+                </a>
+                <a
+                  href="https://github.com/luanchaaves"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-outline"
+                >
+                  <i class="bi bi-github"></i> GitHub Profile
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           13. CONTACT SECTION
+           ====================================================================== -->
+      <section class="section" id="contato">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-badge"><i class="bi bi-chat-left-text"></i> Conecte-se</span>
+            <h2 class="section-title">Let's build better <span>infrastructure.</span></h2>
+            <p class="section-subtitle">
+              Interessado em otimizar sua infraestrutura, implementar automações ou discutir oportunidades em DevOps? Entre em contato.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-info-card reveal-left">
+              <div class="contact-info-top">
+                <h3>Canais de Contato</h3>
+                <p>Disponível para oportunidades profissionais em DevOps, Cloud e Infraestrutura.</p>
+              </div>
+
+              <div class="contact-links-list">
+                <div class="contact-link-item">
+                  <div class="contact-link-left">
+                    <div class="contact-icon-circle"><i class="bi bi-envelope"></i></div>
+                    <div class="contact-link-labels">
+                      <span>E-mail Direto</span>
+                      <strong>luanchaves1011@gmail.com</strong>
+                    </div>
+                  </div>
+                  <button class="btn btn-ghost btn-sm copy-btn" data-copy="luanchaves1011@gmail.com" title="Copiar e-mail">
+                    <i class="bi bi-clipboard"></i>
+                  </button>
+                </div>
+
+                <a
+                  href="https://api.whatsapp.com/send/?phone=5511949109180&text=Ol%C3%A1%20Luan,%20vi%20seu%20portf%C3%B3lio%20DevOps!"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact-link-item"
+                >
+                  <div class="contact-link-left">
+                    <div class="contact-icon-circle"><i class="bi bi-whatsapp"></i></div>
+                    <div class="contact-link-labels">
+                      <span>WhatsApp</span>
+                      <strong>+55 (11) 94910-9180</strong>
+                    </div>
+                  </div>
+                  <i class="bi bi-box-arrow-up-right text-muted"></i>
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/luanchaves10/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact-link-item"
+                >
+                  <div class="contact-link-left">
+                    <div class="contact-icon-circle"><i class="bi bi-linkedin"></i></div>
+                    <div class="contact-link-labels">
+                      <span>LinkedIn</span>
+                      <strong>linkedin.com/in/luanchaves10</strong>
+                    </div>
+                  </div>
+                  <i class="bi bi-box-arrow-up-right text-muted"></i>
+                </a>
+
+                <a
+                  href="https://github.com/luanchaaves"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact-link-item"
+                >
+                  <div class="contact-link-left">
+                    <div class="contact-icon-circle"><i class="bi bi-github"></i></div>
+                    <div class="contact-link-labels">
+                      <span>GitHub</span>
+                      <strong>github.com/luanchaaves</strong>
+                    </div>
+                  </div>
+                  <i class="bi bi-box-arrow-up-right text-muted"></i>
+                </a>
+              </div>
+
+              <div class="status-pill" style="margin: 0; align-self: flex-start;">
+                <span class="status-indicator-dot"></span>
+                <span>Resposta ágil em horário comercial</span>
+              </div>
+            </div>
+
+            <!-- Contact Form Component (Netlify Forms Ready) -->
+            <div class="contact-form-card reveal-right">
+              <form
+                name="contato"
+                method="POST"
+                data-netlify="true"
+                id="contact-form"
+                novalidate
+              >
+                <input type="hidden" name="form-name" value="contato" />
+
+                <div class="form-group">
+                  <label for="nome" class="form-label">Nome Completo</label>
+                  <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    class="form-control"
+                    placeholder="Seu nome ou empresa"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="email" class="form-label">E-mail de Contato</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-control"
+                    placeholder="seu.email@dominio.com"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="mensagem" class="form-label">Mensagem / Proposta</label>
+                  <textarea
+                    id="mensagem"
+                    name="mensagem"
+                    class="form-control"
+                    placeholder="Descreva seu projeto, desafio de infraestrutura ou oportunidade..."
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%;">
+                  <i class="bi bi-send"></i> Enviar Mensagem
+                </button>
+
+                <div class="form-status" id="form-status" role="alert"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ======================================================================
+         14. FOOTER
+         ====================================================================== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <a href="#inicio" class="brand-logo" aria-label="Luan Chaves - Home">
+            <img src="imagens/LOGO-LC.png" alt="LC Logo" class="logo-img" style="height: 36px;" />
+            <div class="brand-text">
+              <span class="brand-name">Luan Chaves</span>
+              <span class="brand-tag">DevOps Engineer</span>
+            </div>
+          </a>
+
+          <div class="footer-social-links">
+            <a
+              href="https://github.com/luanchaaves"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer-social-btn"
+              aria-label="GitHub"
+            >
+              <i class="bi bi-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/luanchaves10/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer-social-btn"
+              aria-label="LinkedIn"
+            >
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/luanchaaves11/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer-social-btn"
+              aria-label="Instagram"
+            >
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a
+              href="https://api.whatsapp.com/send/?phone=5511949109180"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer-social-btn"
+              aria-label="WhatsApp"
+            >
+              <i class="bi bi-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Luan Chaves. Todos os direitos reservados. DevOps First • Development as a Complement.</p>
+          <p>
+            <span class="status-pill" style="padding: 3px 10px; font-size: 0.75rem;">
+              <span class="status-indicator-dot"></span> All Systems Operational
+            </span>
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

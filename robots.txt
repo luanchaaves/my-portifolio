@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lctechh.netlify.app/sitemap.xml
