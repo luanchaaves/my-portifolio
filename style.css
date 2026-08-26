@@ -1635,9 +1635,9 @@ button, input, textarea, select {
    -------------------------------------------------------------------------- */
 .github-wrapper {
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
-  gap: 40px;
-  align-items: center;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 32px;
+  align-items: stretch;
 }
 
 .github-profile-card {
@@ -1647,6 +1647,7 @@ button, input, textarea, select {
   padding: 32px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 20px;
   box-shadow: var(--shadow-lg);
 }
@@ -1708,6 +1709,7 @@ button, input, textarea, select {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  justify-content: space-between;
 }
 
 .repo-card {
