@@ -5,6 +5,7 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+  document.body.classList.add('js-ready');
   initNavbar();
   initScrollProgress();
   initScrollReveal();
@@ -129,6 +130,15 @@ function initScrollReveal() {
     return;
   }
 
+  // Pre-reveal elements already visible in viewport
+  const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+  reveals.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top <= viewportHeight * 0.95 && rect.bottom >= 0) {
+      el.classList.add('revealed');
+    }
+  });
+
   const revealObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -137,11 +147,15 @@ function initScrollReveal() {
       }
     });
   }, {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
+    threshold: 0.05,
+    rootMargin: '0px 0px -30px 0px'
   });
 
-  reveals.forEach(el => revealObserver.observe(el));
+  reveals.forEach(el => {
+    if (!el.classList.contains('revealed')) {
+      revealObserver.observe(el);
+    }
+  });
 }
 
 /* ==========================================================================
@@ -324,8 +338,9 @@ function initCopyButtons() {
    8. GitHub Public Stats Integration
    ========================================================================== */
 async function initGithubStats() {
-  const statsContainer = document.getElementById('github-stats-container');
-  if (!statsContainer) return;
+  const reposCountEl = document.getElementById('gh-repos-count');
+  const followersCountEl = document.getElementById('gh-followers-count');
+  if (!reposCountEl && !followersCountEl) return;
 
   const username = 'luanchaaves';
   
@@ -334,26 +349,12 @@ async function initGithubStats() {
     if (!userRes.ok) throw new Error('GitHub API error');
     const user = await userRes.json();
 
-    statsContainer.innerHTML = `
-      <div class="github-profile-card">
-        <img src="${user.avatar_url}" alt="${user.name || user.login}" class="github-avatar" loading="lazy">
-        <div class="github-user-meta">
-          <h4>${user.name || 'Luan Chaves'}</h4>
-          <p class="gh-handle"><i class="bi bi-github"></i> @${user.login}</p>
-          <span class="github-bio">${user.bio || 'DevOps • Cloud • Infrastructure • Automation'}</span>
-        </div>
-        <div class="github-counts">
-          <div class="count-box">
-            <span class="num">${user.public_repos}</span>
-            <span class="lbl">Repositórios</span>
-          </div>
-          <div class="count-box">
-            <span class="num">${user.followers}</span>
-            <span class="lbl">Seguidores</span>
-          </div>
-        </div>
-      </div>
-    `;
+    if (reposCountEl && typeof user.public_repos === 'number') {
+      reposCountEl.textContent = `${user.public_repos}`;
+    }
+    if (followersCountEl && typeof user.followers === 'number') {
+      followersCountEl.textContent = `${user.followers}`;
+    }
   } catch (err) {
     // Keep static fallback
     console.info('Using static fallback for GitHub statistics.');

@@ -2096,6 +2096,15 @@ textarea.form-control {
 /* --------------------------------------------------------------------------
    17. Scroll Reveal & Utility Animations
    -------------------------------------------------------------------------- */
+/* Fallback: When JS is loading or unavailable, ensure content is 100% visible */
+body:not(.js-ready) .reveal,
+body:not(.js-ready) .reveal-left,
+body:not(.js-ready) .reveal-right,
+body:not(.js-ready) .reveal-scale {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
 .reveal, .reveal-left, .reveal-right, .reveal-scale {
   opacity: 0;
   transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
