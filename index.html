@@ -74,53 +74,61 @@
     <div class="scroll-progress-bar" id="scroll-progress" aria-hidden="true"></div>
 
     <!-- ======================================================================
-         1. NAVBAR / HEADER
+         1. NAVBAR / HEADER (Floating Glass Pill)
          ====================================================================== -->
     <header class="site-header">
-      <div class="container header-inner">
-        <a href="#inicio" class="brand-logo" aria-label="Luan Chaves - Home">
-          <img src="imagens/LOGO-LC.png" alt="LC Logo" class="logo-img" />
-          <div class="brand-text">
-            <span class="brand-name">Luan Chaves</span>
-            <span class="brand-tag">DevOps Engineer</span>
-          </div>
-        </a>
-
-        <!-- Desktop Navigation -->
-        <nav class="nav-desktop" aria-label="Navegação Principal">
-          <ul>
-            <li><a href="#inicio" class="nav-link active">Início</a></li>
-            <li><a href="#sobre" class="nav-link">Sobre</a></li>
-            <li><a href="#skills" class="nav-link">Skills</a></li>
-            <li><a href="#projetos" class="nav-link">Projetos</a></li>
-            <li><a href="#arquiteturas" class="nav-link">Arquiteturas</a></li>
-            <li><a href="#experiencia" class="nav-link">Experiência</a></li>
-            <li><a href="#devops-lab" class="nav-link">DevOps Lab</a></li>
-            <li><a href="#contato" class="nav-link">Contato</a></li>
-          </ul>
-        </nav>
-
-        <!-- Header Actions -->
-        <div class="header-actions">
-          <a
-            href="https://github.com/luanchaaves"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-outline btn-sm header-cta-desktop"
-            aria-label="GitHub de Luan Chaves"
-          >
-            <i class="bi bi-github"></i>
-            <span>GitHub</span>
+      <div class="container header-container">
+        <div class="header-inner glass-pill">
+          <a href="#inicio" class="brand-logo" aria-label="Luan Chaves - Home">
+            <img src="imagens/LOGO-LC.png" alt="LC Logo" class="logo-img" />
+            <div class="brand-text">
+              <span class="brand-name">Luan Chaves</span>
+              <span class="brand-tag">DevOps Engineer</span>
+            </div>
           </a>
 
-          <button
-            class="btn-mobile-toggle"
-            id="btn-menu"
-            aria-label="Abrir menu de navegação"
-            aria-expanded="false"
-          >
-            <i class="bi bi-list"></i>
-          </button>
+          <!-- Telemetry Live Tag -->
+          <div class="header-telemetry-tag d-none-mobile">
+            <span class="status-indicator-dot"></span>
+            <span class="telemetry-text">SYS_ONLINE <span class="telemetry-ping">12ms</span></span>
+          </div>
+
+          <!-- Desktop Navigation -->
+          <nav class="nav-desktop" aria-label="Navegação Principal">
+            <ul>
+              <li><a href="#inicio" class="nav-link active">Início</a></li>
+              <li><a href="#sobre" class="nav-link">Sobre</a></li>
+              <li><a href="#skills" class="nav-link">Skills</a></li>
+              <li><a href="#projetos" class="nav-link">Projetos</a></li>
+              <li><a href="#arquiteturas" class="nav-link">Arquiteturas</a></li>
+              <li><a href="#experiencia" class="nav-link">Experiência</a></li>
+              <li><a href="#devops-lab" class="nav-link">DevOps Lab</a></li>
+              <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+          </nav>
+
+          <!-- Header Actions -->
+          <div class="header-actions">
+            <a
+              href="https://github.com/luanchaaves"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-outline btn-sm header-cta-desktop"
+              aria-label="GitHub de Luan Chaves"
+            >
+              <i class="bi bi-github"></i>
+              <span>GitHub</span>
+            </a>
+
+            <button
+              class="btn-mobile-toggle"
+              id="btn-menu"
+              aria-label="Abrir menu de navegação"
+              aria-expanded="false"
+            >
+              <i class="bi bi-list"></i>
+            </button>
+          </div>
         </div>
       </div>
 
@@ -175,35 +183,26 @@
 
     <main id="main-content">
       <!-- ======================================================================
-           2. HERO SECTION
+           2. HERO SECTION (Dual-Tone & Orchestration Hub)
            ====================================================================== -->
       <section class="hero-section" id="inicio">
         <div class="container">
           <div class="hero-grid">
             <div class="hero-content reveal-left">
-              <div class="status-pill">
-                <span class="status-indicator-dot"></span>
-                <span>OPEN TO DEVOPS OPPORTUNITIES</span>
+              <div class="micro-spec-tag">
+                <span class="spec-index">[ 00.1 // COMMAND CENTER ]</span>
+                <span class="spec-status"><span class="status-indicator-dot"></span> OPEN TO DEVOPS OPPORTUNITIES</span>
               </div>
 
-              <h1 class="hero-title-role">
-                <span class="highlight-cyan">DEVOPS</span> ENGINEER
+              <h1 class="hero-dual-title">
+                <span class="title-solid">DEVOPS ENGINEER</span>
+                <span class="title-faint">Cloud • Infrastructure • Automation • Observability</span>
               </h1>
-
-              <div class="hero-tagline">
-                <span>Cloud</span>
-                <span class="separator">•</span>
-                <span>Infrastructure</span>
-                <span class="separator">•</span>
-                <span>Automation</span>
-                <span class="separator">•</span>
-                <span>Observability</span>
-              </div>
 
               <p class="hero-description">
                 Profissional de tecnologia com 5+ anos de experiência em infraestrutura,
-                cloud, automação, redes e observabilidade, construindo ambientes mais seguros,
-                automatizados e eficientes.
+                cloud, automação, redes e observabilidade, construindo ambientes resilientes,
+                seguros e com alta disponibilidade.
               </p>
 
               <div class="hero-actions">
@@ -232,7 +231,7 @@
               </div>
 
               <div class="hero-tech-pills">
-                <span class="hero-tech-label">Core Focus:</span>
+                <span class="hero-tech-label">CORE FOCUS:</span>
                 <span class="tech-mini-badge"><i class="devicon-azure-plain"></i> Azure</span>
                 <span class="tech-mini-badge"><i class="devicon-amazonwebservices-plain-wordmark"></i> AWS</span>
                 <span class="tech-mini-badge"><i class="devicon-googlecloud-plain"></i> GCP</span>
@@ -243,61 +242,87 @@
               </div>
             </div>
 
-            <!-- Hero Visual Terminal Component -->
+            <!-- Hero DevOps Orchestration Hub & Command Center -->
             <div class="hero-visual-card reveal-right">
-              <div class="terminal-window">
-                <div class="terminal-header">
-                  <div class="terminal-dots">
-                    <span class="terminal-dot red"></span>
-                    <span class="terminal-dot yellow"></span>
-                    <span class="terminal-dot green"></span>
+              <div class="orchestration-hub-card">
+                <div class="hub-header">
+                  <div class="hub-status-left">
+                    <span class="hub-pulse-dot"></span>
+                    <span class="hub-title-text">DEVOPS_ORCHESTRATION_HUB</span>
                   </div>
-                  <span class="terminal-title">luan@devops-node-01:~</span>
-                  <i class="bi bi-hdd-network text-muted"></i>
+                  <div class="hub-status-right">
+                    <span class="hub-metric-badge">HA_CLUSTER: ACTIVE</span>
+                  </div>
                 </div>
-                <div class="terminal-body">
-                  <div class="terminal-line">
-                    <span class="t-prompt">$</span>
-                    <span class="t-cmd">neofetch --devops</span>
-                  </div>
-                  <div class="terminal-line">
-                    <span class="t-key">Role:</span>
-                    <span class="t-val">DevOps Engineer / Infrastructure Specialist</span>
-                  </div>
-                  <div class="terminal-line">
-                    <span class="t-key">Experience:</span>
-                    <span class="t-val">5+ Years in IT Operations & Systems</span>
-                  </div>
-                  <div class="terminal-line">
-                    <span class="t-key">Mindset:</span>
-                    <span class="t-val">DevOps First • Dev as a Complement</span>
+
+                <!-- Orchestration Hub Interactive Topology -->
+                <div class="hub-topology-canvas">
+                  <div class="hub-radar-circle circle-1"></div>
+                  <div class="hub-radar-circle circle-2"></div>
+                  <div class="hub-radar-circle circle-3"></div>
+                  <div class="hub-radar-sweep"></div>
+
+                  <!-- Central Master Node -->
+                  <div class="hub-node hub-master-node" title="DevOps Control Plane">
+                    <div class="node-icon-box">
+                      <img src="imagens/LOGO-LC.png" alt="LC Master" class="node-avatar-mini" />
+                    </div>
+                    <span class="node-label">LC_CONTROL_PLANE</span>
                   </div>
 
-                  <div class="terminal-sys-grid">
-                    <div class="sys-item">
-                      <span class="sys-lbl">Multi-Cloud</span>
-                      <span class="sys-val t-info">Azure • AWS • GCP</span>
-                    </div>
-                    <div class="sys-item">
-                      <span class="sys-lbl">Monitoring</span>
-                      <span class="sys-val t-success">Zabbix • Grafana (24/7)</span>
-                    </div>
-                    <div class="sys-item">
-                      <span class="sys-lbl">Virtualization</span>
-                      <span class="sys-val">Proxmox • VMware • Hyper-V</span>
-                    </div>
-                    <div class="sys-item">
-                      <span class="sys-lbl">Security / Net</span>
-                      <span class="sys-val">FortiGate • VLAN • VPN</span>
-                    </div>
+                  <!-- Surrounding Nodes -->
+                  <div class="hub-node hub-leaf-node node-cloud" title="Multi-Cloud Architecture">
+                    <i class="bi bi-cloud-check"></i>
+                    <span>Cloud Providers</span>
+                    <small>Azure • AWS • GCP</small>
                   </div>
 
-                  <div class="terminal-line">
-                    <span class="t-prompt">$</span>
-                    <span class="t-cmd">systemctl status infrastructure.service</span>
+                  <div class="hub-node hub-leaf-node node-security" title="Edge & Perimeter Security">
+                    <i class="bi bi-shield-check"></i>
+                    <span>FortiGate & VPN</span>
+                    <small>Zero Trust Edge</small>
                   </div>
-                  <div class="terminal-line">
-                    <span class="t-success">● Active: running (high-availability)</span>
+
+                  <div class="hub-node hub-leaf-node node-monitoring" title="24/7 Telemetry">
+                    <i class="bi bi-activity"></i>
+                    <span>Zabbix & Grafana</span>
+                    <small>99.98% Uptime</small>
+                  </div>
+
+                  <div class="hub-node hub-leaf-node node-cicd" title="Automated Pipelines">
+                    <i class="bi bi-arrow-repeat"></i>
+                    <span>Docker & Actions</span>
+                    <small>CI/CD Automated</small>
+                  </div>
+
+                  <div class="hub-node hub-leaf-node node-virt" title="Hypervisors & OS">
+                    <i class="bi bi-hdd-rack"></i>
+                    <span>Proxmox & Linux</span>
+                    <small>FOG PXE Deploy</small>
+                  </div>
+                </div>
+
+                <!-- Hub Telemetry Stats Bar -->
+                <div class="hub-telemetry-bar">
+                  <div class="telemetry-slot">
+                    <span class="slot-lbl">LATENCY</span>
+                    <span class="slot-val text-cyan">0.8ms</span>
+                  </div>
+                  <div class="telemetry-slot">
+                    <span class="slot-lbl">PIPELINE</span>
+                    <span class="slot-val text-success">PASSED</span>
+                  </div>
+                  <div class="telemetry-slot">
+                    <span class="slot-lbl">UPTIME</span>
+                    <span class="slot-val">99.98%</span>
+                  </div>
+                  <div class="telemetry-slot">
+                    <span class="slot-lbl">AUTOMATION</span>
+                    <span class="slot-val text-warning">100%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
                   </div>
                 </div>
               </div>
@@ -1676,13 +1701,137 @@
             <span class="section-badge"><i class="bi bi-code-square"></i> Competência Complementar</span>
             <h2 class="section-title">Development <span>Projects</span></h2>
             <p class="section-subtitle">
-              Projetos de desenvolvimento de software e web desenvolvidos para soluções comerciais, utilitários e landing pages.
+              Sistemas full-stack, plataformas web e soluções customizadas desenvolvidas com foco em arquitetura limpa, performance e escalabilidade.
             </p>
           </div>
 
           <div class="web-projects-grid">
-            <!-- Project 1 -->
+            <!-- Project 1: EventMaster ERP -->
             <div class="web-project-card reveal">
+              <div class="web-project-img" style="background-image: url('imagens/eventmaster-erp.png')">
+                <div class="web-project-overlay">
+                  <a href="https://github.com/luanchaaves/system-empresas" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                    <i class="bi bi-github"></i> Ver no GitHub
+                  </a>
+                </div>
+              </div>
+              <div class="web-project-body">
+                <div>
+                  <h3 class="web-project-title">EventMaster ERP</h3>
+                  <p style="font-size: 0.85rem; margin-top: 4px;">Sistema corporativo full-stack para gestão de eventos e operações, motor de PDF (Puppeteer), container Docker e sincronização com Google Calendar API.</p>
+                </div>
+                <div class="web-project-tags">
+                  <span class="web-tag">React 19</span>
+                  <span class="web-tag">TypeScript</span>
+                  <span class="web-tag">Docker</span>
+                  <span class="web-tag">Puppeteer</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2: Sistema Financeiro & Patrimonial -->
+            <div class="web-project-card reveal" style="transition-delay: 0.1s">
+              <div class="web-project-img" style="background-image: url('imagens/sistema-financeiro.svg'); background-size: contain; background-color: #0c1017;">
+                <div class="web-project-overlay">
+                  <a href="https://github.com/luanchaaves/sistema-financeiro" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                    <i class="bi bi-github"></i> Ver no GitHub
+                  </a>
+                </div>
+              </div>
+              <div class="web-project-body">
+                <div>
+                  <h3 class="web-project-title">Sistema Financeiro & Patrimonial</h3>
+                  <p style="font-size: 0.85rem; margin-top: 4px;">Plataforma FinTech para controle patrimonial, fluxo de caixa, cartões de crédito e relatórios analíticos estruturada em Next.js 14 e Prisma ORM.</p>
+                </div>
+                <div class="web-project-tags">
+                  <span class="web-tag">Next.js 14</span>
+                  <span class="web-tag">TypeScript</span>
+                  <span class="web-tag">Prisma ORM</span>
+                  <span class="web-tag">SQLite</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3: Camila Rodrigues Beauty & Academy -->
+            <div class="web-project-card reveal" style="transition-delay: 0.2s">
+              <div class="web-project-img" style="background-image: url('imagens/camilalash.png')">
+                <div class="web-project-overlay">
+                  <a href="https://github.com/luanchaaves/page-lashcamila" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" style="margin-right: 6px;">
+                    <i class="bi bi-github"></i> GitHub
+                  </a>
+                  <a href="https://camilalash.netlify.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                    <i class="bi bi-box-arrow-up-right"></i> Live Demo
+                  </a>
+                </div>
+              </div>
+              <div class="web-project-body">
+                <div>
+                  <h3 class="web-project-title">Camila Rodrigues Beauty</h3>
+                  <p style="font-size: 0.85rem; margin-top: 4px;">Landing page comercial de alta conversão para serviços de estética avançada e cursos, com layout responsivo, SEO e integração de agendamento.</p>
+                </div>
+                <div class="web-project-tags">
+                  <span class="web-tag">HTML5 / CSS3</span>
+                  <span class="web-tag">JavaScript</span>
+                  <span class="web-tag">UI/UX</span>
+                  <span class="web-tag">SEO</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 4: Robô LED Partner -->
+            <div class="web-project-card reveal">
+              <div class="web-project-img" style="background-image: url('imagens/roboled-site.png')">
+                <div class="web-project-overlay">
+                  <a href="https://github.com/luanchaaves/page-roboled" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" style="margin-right: 6px;">
+                    <i class="bi bi-github"></i> GitHub
+                  </a>
+                  <a href="https://page-roboled.netlify.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                    <i class="bi bi-box-arrow-up-right"></i> Live Demo
+                  </a>
+                </div>
+              </div>
+              <div class="web-project-body">
+                <div>
+                  <h3 class="web-project-title">Robô LED Partner</h3>
+                  <p style="font-size: 0.85rem; margin-top: 4px;">Portal promocional de alta performance para shows com robôs de LED interativos, efeitos visuais dinâmicos e captação de leads qualificados.</p>
+                </div>
+                <div class="web-project-tags">
+                  <span class="web-tag">JavaScript</span>
+                  <span class="web-tag">CSS3 Animations</span>
+                  <span class="web-tag">Lead Gen</span>
+                  <span class="web-tag">Responsive</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 5: Portfólio Ysac Moura -->
+            <div class="web-project-card reveal" style="transition-delay: 0.1s">
+              <div class="web-project-img" style="background-image: url('imagens/ysac-portifolio.png')">
+                <div class="web-project-overlay">
+                  <a href="https://github.com/luanchaaves/portifolio-ysac" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" style="margin-right: 6px;">
+                    <i class="bi bi-github"></i> GitHub
+                  </a>
+                  <a href="https://portifolio-ysac.netlify.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                    <i class="bi bi-box-arrow-up-right"></i> Live Demo
+                  </a>
+                </div>
+              </div>
+              <div class="web-project-body">
+                <div>
+                  <h3 class="web-project-title">Portfólio Ysac Moura</h3>
+                  <p style="font-size: 0.85rem; margin-top: 4px;">Plataforma artística e portfólio oficial para produtor musical & DJ, com player de áudio integrado, discografia e visual dark tech moderno.</p>
+                </div>
+                <div class="web-project-tags">
+                  <span class="web-tag">JavaScript</span>
+                  <span class="web-tag">Audio Player</span>
+                  <span class="web-tag">CSS Grid</span>
+                  <span class="web-tag">Dark Mode</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 6: Toca Ebook -->
+            <div class="web-project-card reveal" style="transition-delay: 0.2s">
               <div class="web-project-img" style="background-image: url('imagens/ebook.png')">
                 <div class="web-project-overlay">
                   <a href="https://tocaebook.netlify.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
@@ -1693,188 +1842,13 @@
               <div class="web-project-body">
                 <div>
                   <h3 class="web-project-title">Toca Ebook</h3>
-                  <p style="font-size: 0.85rem; margin-top: 4px;">Plataforma de exibição e venda de e-books digitais com interface moderna.</p>
+                  <p style="font-size: 0.85rem; margin-top: 4px;">Plataforma de exibição e venda de e-books digitais com interface moderna, catálogo interativo e fluxo otimizado de checkout.</p>
                 </div>
                 <div class="web-project-tags">
                   <span class="web-tag">HTML5</span>
                   <span class="web-tag">CSS3</span>
                   <span class="web-tag">JavaScript</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="web-project-card reveal" style="transition-delay: 0.1s">
-              <div class="web-project-img" style="background-image: url('imagens/calcularimc.png')">
-                <div class="web-project-overlay">
-                  <a href="https://lcimccalcular.netlify.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
-                    <i class="bi bi-box-arrow-up-right"></i> Acessar Site
-                  </a>
-                </div>
-              </div>
-              <div class="web-project-body">
-                <div>
-                  <h3 class="web-project-title">Calculadora de IMC</h3>
-                  <p style="font-size: 0.85rem; margin-top: 4px;">Ferramenta de cálculo de índice de massa corporal com feedback instantâneo.</p>
-                </div>
-                <div class="web-project-tags">
-                  <span class="web-tag">JavaScript</span>
-                  <span class="web-tag">CSS3</span>
-                  <span class="web-tag">HTML5</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="web-project-card reveal" style="transition-delay: 0.2s">
-              <div class="web-project-img" style="background-image: url('imagens/clima.png')">
-                <div class="web-project-overlay">
-                  <a href="https://lcclima.netlify.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
-                    <i class="bi bi-box-arrow-up-right"></i> Acessar Site
-                  </a>
-                </div>
-              </div>
-              <div class="web-project-body">
-                <div>
-                  <h3 class="web-project-title">Detector de Clima</h3>
-                  <p style="font-size: 0.85rem; margin-top: 4px;">Aplicação de previsão do tempo com consumo de API externa de clima em tempo real.</p>
-                </div>
-                <div class="web-project-tags">
-                  <span class="web-tag">REST API</span>
-                  <span class="web-tag">JavaScript</span>
-                  <span class="web-tag">Async/Await</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project 4 -->
-            <div class="web-project-card reveal">
-              <div class="web-project-img" style="background-image: url('imagens/geradoremail.png')">
-                <div class="web-project-overlay">
-                  <a href="https://geradorlc.netlify.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
-                    <i class="bi bi-box-arrow-up-right"></i> Acessar Site
-                  </a>
-                </div>
-              </div>
-              <div class="web-project-body">
-                <div>
-                  <h3 class="web-project-title">Gerador de E-mail</h3>
-                  <p style="font-size: 0.85rem; margin-top: 4px;">Utilitário para formatação rápida de mensagens de e-mail corporativas.</p>
-                </div>
-                <div class="web-project-tags">
-                  <span class="web-tag">JavaScript</span>
-                  <span class="web-tag">CSS3</span>
-                  <span class="web-tag">HTML5</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project 5 -->
-            <div class="web-project-card reveal" style="transition-delay: 0.1s">
-              <div class="web-project-img" style="background-image: url('imagens/camilalash.png')">
-                <div class="web-project-overlay">
-                  <a href="https://camilalash.netlify.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
-                    <i class="bi bi-box-arrow-up-right"></i> Acessar Site
-                  </a>
-                </div>
-              </div>
-              <div class="web-project-body">
-                <div>
-                  <h3 class="web-project-title">Camila Lash</h3>
-                  <p style="font-size: 0.85rem; margin-top: 4px;">Landing page comercial de alta conversão para serviços de estética e beleza.</p>
-                </div>
-                <div class="web-project-tags">
-                  <span class="web-tag">Landing Page</span>
-                  <span class="web-tag">UI/UX</span>
-                  <span class="web-tag">Responsive</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project 6 -->
-            <div class="web-project-card reveal" style="transition-delay: 0.2s">
-              <div class="web-project-img" style="background-image: url('imagens/miniextra.png')">
-                <div class="web-project-overlay">
-                  <a href="https://miniextra.netlify.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
-                    <i class="bi bi-box-arrow-up-right"></i> Acessar Site
-                  </a>
-                </div>
-              </div>
-              <div class="web-project-body">
-                <div>
-                  <h3 class="web-project-title">Mini Extra</h3>
-                  <p style="font-size: 0.85rem; margin-top: 4px;">Website comercial voltado para apresentação de produtos e ofertas.</p>
-                </div>
-                <div class="web-project-tags">
-                  <span class="web-tag">Website</span>
-                  <span class="web-tag">CSS3</span>
-                  <span class="web-tag">Responsive</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project 7 -->
-            <div class="web-project-card reveal">
-              <div class="web-project-img" style="background-image: url('imagens/lcoutlet.png')">
-                <div class="web-project-overlay">
-                  <a href="https://lcoutlet.netlify.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
-                    <i class="bi bi-box-arrow-up-right"></i> Acessar Site
-                  </a>
-                </div>
-              </div>
-              <div class="web-project-body">
-                <div>
-                  <h3 class="web-project-title">LC Outlet</h3>
-                  <p style="font-size: 0.85rem; margin-top: 4px;">Landing page moderna para catálogo de produtos e vendas.</p>
-                </div>
-                <div class="web-project-tags">
-                  <span class="web-tag">E-Commerce UI</span>
-                  <span class="web-tag">CSS3</span>
-                  <span class="web-tag">HTML5</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project 8 -->
-            <div class="web-project-card reveal" style="transition-delay: 0.1s">
-              <div class="web-project-img" style="background-image: url('imagens/nilarts.png')">
-                <div class="web-project-overlay">
-                  <a href="https://nilarts.netlify.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
-                    <i class="bi bi-box-arrow-up-right"></i> Acessar Site
-                  </a>
-                </div>
-              </div>
-              <div class="web-project-body">
-                <div>
-                  <h3 class="web-project-title">Nil Arts</h3>
-                  <p style="font-size: 0.85rem; margin-top: 4px;">Portfólio e apresentação visual de serviços artísticos e gráficos.</p>
-                </div>
-                <div class="web-project-tags">
-                  <span class="web-tag">Landing Page</span>
-                  <span class="web-tag">Design</span>
-                  <span class="web-tag">Responsive</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project 9 -->
-            <div class="web-project-card reveal" style="transition-delay: 0.2s">
-              <div class="web-project-img" style="background-image: url('imagens/lcstore.png')">
-                <div class="web-project-overlay">
-                  <a href="https://lcstoree.netlify.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
-                    <i class="bi bi-box-arrow-up-right"></i> Acessar Site
-                  </a>
-                </div>
-              </div>
-              <div class="web-project-body">
-                <div>
-                  <h3 class="web-project-title">LC Store</h3>
-                  <p style="font-size: 0.85rem; margin-top: 4px;">Interface completa de loja virtual com catálogo de produtos e navegação fluida.</p>
-                </div>
-                <div class="web-project-tags">
                   <span class="web-tag">E-Commerce</span>
-                  <span class="web-tag">JavaScript</span>
-                  <span class="web-tag">HTML5</span>
                 </div>
               </div>
             </div>
