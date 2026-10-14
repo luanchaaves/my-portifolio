@@ -28,7 +28,7 @@
       property="og:description"
       content="Profissional de tecnologia com experiência em infraestrutura, cloud, automação, redes e observabilidade, construindo ambientes mais seguros, automatizados e eficientes."
     />
-    <meta property="og:image" content="imagens/LOGO-LC.png" />
+    <meta property="og:image" content="imagens/logo-oficial.jpg" />
     <meta property="og:locale" content="pt_BR" />
 
     <!-- Twitter Cards -->
@@ -39,11 +39,11 @@
       name="twitter:description"
       content="DevOps First. Development as a Complement. Cloud • Infrastructure • Automation • Observability."
     />
-    <meta name="twitter:image" content="imagens/LOGO-LC.png" />
+    <meta name="twitter:image" content="imagens/logo-oficial.jpg" />
 
     <!-- Favicon -->
-    <link rel="icon" href="imagens/LOGO-LC.png" type="image/png" />
-    <link rel="apple-touch-icon" href="imagens/LOGO-LC.png" />
+    <link rel="icon" href="imagens/logo-oficial.jpg" type="image/jpeg" />
+    <link rel="apple-touch-icon" href="imagens/logo-oficial.jpg" />
 
     <!-- Google Fonts Preconnect & Fonts (Inter Variable, JetBrains Mono) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -77,10 +77,10 @@
          1. NAVBAR / HEADER (Floating Glass Pill)
          ====================================================================== -->
     <header class="site-header">
-      <div class="container header-container">
+      <div class="header-container">
         <div class="header-inner glass-pill">
           <a href="#inicio" class="brand-logo" aria-label="Luan Chaves - Home">
-            <img src="imagens/LOGO-LC.png" alt="LC Logo" class="logo-img" />
+            <img src="imagens/logo-oficial.jpg" alt="LC Official Logo" class="logo-img" />
             <div class="brand-text">
               <span class="brand-name">Luan Chaves</span>
               <span class="brand-tag">DevOps Engineer</span>
@@ -194,21 +194,25 @@
                 <span class="spec-status"><span class="status-indicator-dot"></span> OPEN TO DEVOPS OPPORTUNITIES</span>
               </div>
 
-              <h1 class="hero-dual-title">
-                <span class="title-solid">DEVOPS ENGINEER</span>
-                <span class="title-faint">Cloud • Infrastructure • Automation • Observability</span>
+              <h1 class="hero-main-heading">
+                <span class="hero-name-title">LUAN CHAVES</span>
+                <span class="hero-subtitle">DevOps Engineer • Cloud & Infrastructure</span>
               </h1>
 
               <p class="hero-description">
                 Profissional de tecnologia com 5+ anos de experiência em infraestrutura,
-                cloud, automação, redes e observabilidade, construindo ambientes resilientes,
-                seguros e com alta disponibilidade.
+                cloud (Azure, AWS, GCP), automação com CI/CD, segurança perimetral FortiGate
+                e observabilidade de missão crítica com Zabbix e Grafana.
               </p>
 
               <div class="hero-actions">
                 <a href="#projetos" class="btn btn-primary">
                   <i class="bi bi-folder-check"></i>
                   <span>Ver Projetos</span>
+                </a>
+                <a href="#devops-lab" class="btn btn-outline">
+                  <i class="bi bi-terminal"></i>
+                  <span>DevOps Lab</span>
                 </a>
                 <a
                   href="https://github.com/luanchaaves"
@@ -244,66 +248,83 @@
 
             <!-- Hero DevOps Orchestration Hub & Command Center -->
             <div class="hero-visual-card reveal-right">
-              <div class="orchestration-hub-card">
-                <div class="hub-header">
-                  <div class="hub-status-left">
-                    <span class="hub-pulse-dot"></span>
-                    <span class="hub-title-text">DEVOPS_ORCHESTRATION_HUB</span>
+              <div class="command-center-frame">
+                <!-- Top Window Header -->
+                <div class="frame-header">
+                  <div class="window-controls">
+                    <span class="ctrl-dot red"></span>
+                    <span class="ctrl-dot yellow"></span>
+                    <span class="ctrl-dot green"></span>
                   </div>
-                  <div class="hub-status-right">
-                    <span class="hub-metric-badge">HA_CLUSTER: ACTIVE</span>
+                  <div class="frame-title">
+                    <i class="bi bi-terminal-fill"></i>
+                    <span>luan-chaves@cloud-control-plane:~$</span>
+                  </div>
+                  <div class="frame-badge">
+                    <span class="status-indicator-dot"></span>
+                    <span>HA ACTIVE</span>
                   </div>
                 </div>
 
-                <!-- Orchestration Hub Interactive Topology -->
-                <div class="hub-topology-canvas">
-                  <div class="hub-radar-circle circle-1"></div>
-                  <div class="hub-radar-circle circle-2"></div>
-                  <div class="hub-radar-circle circle-3"></div>
-                  <div class="hub-radar-sweep"></div>
-
-                  <!-- Central Master Node -->
-                  <div class="hub-node hub-master-node" title="DevOps Control Plane">
-                    <div class="node-icon-box">
-                      <img src="imagens/LOGO-LC.png" alt="LC Master" class="node-avatar-mini" />
+                <!-- Brand Showcase Strip -->
+                <div class="frame-brand-strip">
+                  <div class="brand-avatar-box">
+                    <img src="imagens/logo-oficial.jpg" alt="Luan Chaves Official Logo" class="brand-avatar-img" />
+                  </div>
+                  <div class="brand-identity-info">
+                    <div class="identity-name">LUAN CHAVES</div>
+                    <div class="identity-role">DevOps / Cloud / Linux / Automation</div>
+                    <div class="identity-tags">
+                      <span class="micro-badge"><i class="devicon-azure-plain"></i> Azure</span>
+                      <span class="micro-badge"><i class="devicon-amazonwebservices-plain-wordmark"></i> AWS</span>
+                      <span class="micro-badge"><i class="devicon-googlecloud-plain"></i> GCP</span>
+                      <span class="micro-badge"><i class="devicon-docker-plain"></i> Docker</span>
                     </div>
-                    <span class="node-label">LC_CONTROL_PLANE</span>
                   </div>
+                </div>
 
-                  <!-- Surrounding Nodes -->
-                  <div class="hub-node hub-leaf-node node-cloud" title="Multi-Cloud Architecture">
-                    <i class="bi bi-cloud-check"></i>
-                    <span>Cloud Providers</span>
-                    <small>Azure • AWS • GCP</small>
+                <!-- Infrastructure Grid -->
+                <div class="frame-system-grid">
+                  <div class="sys-stat-card">
+                    <div class="stat-icon"><i class="bi bi-cloud-check text-cyan"></i></div>
+                    <div class="stat-content">
+                      <span class="stat-label">CLOUD INFRASTRUCTURE</span>
+                      <span class="stat-value">Azure • AWS • GCP Multi-Cloud</span>
+                    </div>
                   </div>
+                  <div class="sys-stat-card">
+                    <div class="stat-icon"><i class="bi bi-shield-lock text-emerald"></i></div>
+                    <div class="stat-content">
+                      <span class="stat-label">SECURITY & EDGE</span>
+                      <span class="stat-value">FortiGate Zero-Trust VPN</span>
+                    </div>
+                  </div>
+                  <div class="sys-stat-card">
+                    <div class="stat-icon"><i class="bi bi-arrow-repeat text-indigo"></i></div>
+                    <div class="stat-content">
+                      <span class="stat-label">CI/CD & AUTOMATION</span>
+                      <span class="stat-value">GitHub Actions • Docker • IaC</span>
+                    </div>
+                  </div>
+                  <div class="sys-stat-card">
+                    <div class="stat-icon"><i class="bi bi-activity text-warning"></i></div>
+                    <div class="stat-content">
+                      <span class="stat-label">OBSERVABILITY</span>
+                      <span class="stat-value">Zabbix & Grafana 24/7 (99.98%)</span>
+                    </div>
+                  </div>
+                </div>
 
-                  <div class="hub-node hub-leaf-node node-security" title="Edge & Perimeter Security">
-                    <i class="bi bi-shield-check"></i>
-                    <span>FortiGate & VPN</span>
-                    <small>Zero Trust Edge</small>
-                  </div>
-
-                  <div class="hub-node hub-leaf-node node-monitoring" title="24/7 Telemetry">
-                    <i class="bi bi-activity"></i>
-                    <span>Zabbix & Grafana</span>
-                    <small>99.98% Uptime</small>
-                  </div>
-
-                  <div class="hub-node hub-leaf-node node-cicd" title="Automated Pipelines">
-                    <i class="bi bi-arrow-repeat"></i>
-                    <span>Docker & Actions</span>
-                    <small>CI/CD Automated</small>
-                  </div>
-
-                  <div class="hub-node hub-leaf-node node-virt" title="Hypervisors & OS">
-                    <i class="bi bi-hdd-rack"></i>
-                    <span>Proxmox & Linux</span>
-                    <small>FOG PXE Deploy</small>
-                  </div>
+                <!-- Console Output Stream -->
+                <div class="frame-console-body">
+                  <div class="console-line"><span class="c-prompt">$</span> <span class="c-cmd">kubectl get nodes -o wide</span></div>
+                  <div class="console-line c-output"><span class="c-success">✔</span> <span>control-plane-azure01</span> <span class="c-dim">[Ready, v1.30.2, 0.8ms]</span></div>
+                  <div class="console-line"><span class="c-prompt">$</span> <span class="c-cmd">devops-pipeline --verify-all</span></div>
+                  <div class="console-line c-output"><span class="c-cyan">ℹ</span> <span>Infrastructure verified:</span> <span class="c-white">All systems operational</span></div>
                 </div>
 
                 <!-- Hub Telemetry Stats Bar -->
-                <div class="hub-telemetry-bar">
+                <div class="frame-footer-metrics">
                   <div class="telemetry-slot">
                     <span class="slot-lbl">LATENCY</span>
                     <span class="slot-val text-cyan">0.8ms</span>
@@ -319,10 +340,6 @@
                   <div class="telemetry-slot">
                     <span class="slot-lbl">AUTOMATION</span>
                     <span class="slot-val text-warning">100%</span>
-                  </div>
-                </div>
-              </div>
-            </div>
                   </div>
                 </div>
               </div>
@@ -2056,7 +2073,7 @@
       <div class="container">
         <div class="footer-top">
           <a href="#inicio" class="brand-logo" aria-label="Luan Chaves - Home">
-            <img src="imagens/LOGO-LC.png" alt="LC Logo" class="logo-img" style="height: 36px;" />
+            <img src="imagens/logo-oficial.jpg" alt="LC Official Logo" class="logo-img" style="height: 36px; border-radius: 8px;" />
             <div class="brand-text">
               <span class="brand-name">Luan Chaves</span>
               <span class="brand-tag">DevOps Engineer</span>
